@@ -7,7 +7,8 @@
   },
   "api": {
     "baseUrl": "https://api.catalogix.ai/v1/",
-    "playground": {"mode": "show"}},
+    "playground": { "mode": "show" }
+  },
   "favicon": "/favicon.png",
   "colors": {
     "primary": "#0D9373",
@@ -44,41 +45,18 @@
       ]
     },
     {
-      "group": "Channels",
+      "group": "Product APIs",
       "pages": [
-        "Channels/Amazon",
-        "Flipkart",
-        "Myntra",
-        "Nykaa",
-        "Tatacliq",
-        "Ajio",
-        "Snapdeal"
+        "api-reference/product-apis/retrieve-product-data",
+        "api-reference/product-apis/update-product-data",
+        "api-reference/product-apis/insert-product-data",
+        "api-reference/product-apis/retrieve-product-data-based-on-status",
+        "api-reference/product-apis/delete-product-data"
       ]
     },
     {
-      "group": "Connectors",
-      "pages": [
-        "Shopify"
-        "Amazon"
-        "Myntra"
-        "Magento"
-      ]
-    },
-    {
-    "group": "Product APIs",
-    "pages": [
-      "api-reference/product-apis/retrieve-product-data",
-      "api-reference/product-apis/update-product-data",
-      "api-reference/product-apis/insert-product-data",
-      "api-reference/product-apis/retrieve-product-data-based-on-status",
-      "api-reference/product-apis/delete-product-data"
-    ]
-  },
-    {
-    "group": "API Information",
-    "pages": [
-      "api-reference/api-information/rate-limiting-info"
-    ]
-  }
+      "group": "API Information",
+      "pages": ["api-reference/api-information/rate-limiting-info"]
+    }
   ]
 }
