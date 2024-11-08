@@ -46,7 +46,7 @@
     {
       "group": "Channels",
       "pages": [
-        "Amazon",
+        "Channels/Amazon",
         "Flipkart",
         "Myntra",
         "Nykaa",
