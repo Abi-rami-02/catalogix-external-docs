@@ -45,6 +45,118 @@
       ]
     },
     {
+      "group": "Channels",
+      "pages": [
+        "channels/overview",
+        "channels/Facebook Shop",
+        "channels/Google Merchant Center",
+        "channels/Shopify",
+        {
+          "group": "North America",
+          "pages": [
+            "channels/na/amazon-us",
+            "channels/na/walmart",
+            "channels/na/ebay-us",
+            "channels/na/amazon-ca",
+            "channels/na/bestbuy",
+            "channels/na/target",
+            "channels/na/homedepot"
+          ]
+        },
+        {
+          "group": "Europe",
+          "pages": [
+            "channels/eu/amazon-uk",
+            "channels/eu/ebay-uk",
+            "channels/eu/amazon-de",
+            "channels/eu/ebay-de",
+            "channels/eu/otto",
+            "channels/eu/la moda (russia)",
+            "channels/eu/amazon-fr",
+            "channels/eu/cdiscount",
+            "channels/eu/amazon-it",
+            "channels/eu/amazon-es",
+            "channels/eu/bol",
+            "channels/eu/allegro",
+            "channels/eu/zalando"
+          ]
+        },
+        {
+          "group": "Asia",
+          "pages": [
+            "channels/asia/amazon-jp",
+            "channels/asia/rakuten",
+            "channels/asia/shopee",
+            "channels/asia/lazada",
+            "channels/asia/taobao",
+            "channels/asia/tmall",
+            "channels/asia/jd"
+          ]
+        },
+        {
+          "group": "India",
+          "pages": [
+            "channels/in/amazon seller",
+            "channels/in/amazon cocoblu",
+            "channels/in/flipkart",
+            "channels/in/snapdeal",
+            "channels/in/myntra",
+            "channels/in/nykaa",
+            "channels/in/ajio",
+            "channels/in/tatacliq",
+            "channels/in/bewakoof",
+            "channels/in/dealshare",
+            "channels/in/firstcry",
+            "channels/in/fynd",
+            "channels/in/increff",
+            "channels/in/inorbit",
+            "channels/in/meesho",
+            "channels/in/nnow",
+            "channels/in/megamart",
+            "channels/in/shopsy",
+            "channels/in/shoppers stop",
+            "channels/in/trell"
+          ]
+        },
+        {
+          "group": "Oceania",
+          "pages": [
+            "channels/oc/amazon-au",
+            "channels/oc/ebay-au",
+            "channels/oc/kogan",
+            "channels/oc/trademe"
+          ]
+        },
+        {
+          "group": "Middle East",
+          "pages": [
+            "channels/me/amazon-ae",
+            "channels/me/noon",
+            "channels/me/souq",
+            "channels/me/jumia"
+          ]
+        },
+        {
+          "group": "Africa",
+          "pages": [
+            "channels/af/jumia",
+            "channels/af/takealot",
+            "channels/af/kilimall",
+            "channels/af/konga"
+          ]
+        },
+        {
+          "group": "South America",
+          "pages": [
+            "channels/sa/amazon-br",
+            "channels/sa/mercadolibre",
+            "channels/sa/americanas",
+            "channels/sa/magazineluiza"
+          ]
+        }
+      ]
+    },
+    {
       "group": "Product APIs",
       "pages": [
         "api-reference/product-apis/retrieve-product-data",
