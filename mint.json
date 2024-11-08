@@ -1,14 +1,27 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Catalogix Docs",
+  "name": "Catalogix Documentation",
   "logo": {
     "light": "https://cdn.prod.website-files.com/628a7fa3d53df316ad56015b/660f9d2acd58a995b434b157_Catalogix%20Logo.svg",
     "dark": "https://cdn.prod.website-files.com/628a7fa3d53df316ad56015b/660f9d2acd58a995b434b157_Catalogix%20Logo.svg"
+  },
+  "analytics": {
+    "plausible": {
+      "domain": "docs.catalogix.ai"
+    }
   },
   "api": {
     "baseUrl": "https://api.catalogix.ai/v1/",
     "playground": { "mode": "show" }
   },
+  "layout": "sidenav",
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
+  "sidebar": { "items": "container" },
+  "topbar": { "style": "default" },
+  "search": { "location": "top", "prompt": "Search..." },
   "favicon": "/favicon.png",
   "colors": {
     "primary": "#0D9373",
@@ -20,12 +33,15 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "help@catalogix.ai"
+      "url": "mailto:help@catalogix.ai"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.catalogix.ai"
+    "type": "link",
+    "name": "Get Started",
+    "url": "https://dashboard.catalogix.ai",
+    "style": "pill",
+    "arrow": true
   },
   "tabs": [
     {
@@ -48,9 +64,71 @@
       "group": "Channels",
       "pages": [
         "channels/overview",
-        "channels/Facebook Shop",
-        "channels/Google Merchant Center",
-        "channels/Shopify",
+        {
+          "group": "Platforms",
+          "pages": [
+            "channels/pl/Facebook Shop",
+            "channels/pl/Google Merchant Center",
+            "channels/pl/Shopify",
+            "channels/pl/Magento"
+          ]
+        },
+        {
+          "group": "India",
+          "pages": [
+            "channels/in/amazon Seller",
+            "channels/in/amazon Appario Retail",
+            "channels/in/amazon Cloudtail",
+            "channels/in/amazon Cocoblu",
+            "channels/in/amazon Darshita Etech",
+            "channels/in/amazon Kartify",
+            "channels/in/amazon Rocket Kommerce",
+            "channels/in/amazon Supc",
+            "channels/in/bewakoof",
+            "channels/in/dealshare",
+            "channels/in/firstcry",
+            "channels/in/flipkart",
+            "channels/in/fynd",
+            "channels/in/increff",
+            "channels/in/inorbit",
+            "channels/in/meesho",
+            "channels/in/megamart",
+            "channels/in/myntra",
+            "channels/in/nnow",
+            "channels/in/nykaa",
+            "channels/in/shoppers stop",
+            "channels/in/shopsy",
+            "channels/in/snapdeal",
+            "channels/in/tatacliq"
+          ]
+        },
+        {
+          "group": "Middle East",
+          "pages": [
+            "channels/me/amazon UAE",
+            "channels/me/amazon Saudi Arabia",
+            "channels/me/amazon Kuwait",
+            "channels/me/amazon Bahrain",
+            "channels/me/amazon Qatar",
+            "channels/me/noon",
+            "channels/me/namshi",
+            "channels/me/souq",
+            "channels/me/jumia",
+            "channels/me/trendyol"
+          ]
+        },
+        {
+          "group": "Asia",
+          "pages": [
+            "channels/asia/amazon-jp",
+            "channels/asia/rakuten",
+            "channels/asia/shopee",
+            "channels/asia/lazada",
+            "channels/asia/taobao",
+            "channels/asia/tmall",
+            "channels/asia/jd"
+          ]
+        },
         {
           "group": "North America",
           "pages": [
@@ -81,43 +159,7 @@
             "channels/eu/zalando"
           ]
         },
-        {
-          "group": "Asia",
-          "pages": [
-            "channels/asia/amazon-jp",
-            "channels/asia/rakuten",
-            "channels/asia/shopee",
-            "channels/asia/lazada",
-            "channels/asia/taobao",
-            "channels/asia/tmall",
-            "channels/asia/jd"
-          ]
-        },
-        {
-          "group": "India",
-          "pages": [
-            "channels/in/amazon seller",
-            "channels/in/amazon cocoblu",
-            "channels/in/flipkart",
-            "channels/in/snapdeal",
-            "channels/in/myntra",
-            "channels/in/nykaa",
-            "channels/in/ajio",
-            "channels/in/tatacliq",
-            "channels/in/bewakoof",
-            "channels/in/dealshare",
-            "channels/in/firstcry",
-            "channels/in/fynd",
-            "channels/in/increff",
-            "channels/in/inorbit",
-            "channels/in/meesho",
-            "channels/in/nnow",
-            "channels/in/megamart",
-            "channels/in/shopsy",
-            "channels/in/shoppers stop",
-            "channels/in/trell"
-          ]
-        },
+
         {
           "group": "Oceania",
           "pages": [
@@ -125,15 +167,6 @@
             "channels/oc/ebay-au",
             "channels/oc/kogan",
             "channels/oc/trademe"
-          ]
-        },
-        {
-          "group": "Middle East",
-          "pages": [
-            "channels/me/amazon-ae",
-            "channels/me/noon",
-            "channels/me/souq",
-            "channels/me/jumia"
           ]
         },
         {
