@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Catalogix Docs",
   "logo": {
-    "light": "https://d1q9qhpdr6ehzh.streamoid.com/thumbnail/Catalogix_logo",
-    "dark": "https://d1q9qhpdr6ehzh.streamoid.com/thumbnail/Catalogix_logo"
+    "light": "https://cdn.prod.website-files.com/628a7fa3d53df316ad56015b/660f9d2acd58a995b434b157_Catalogix%20Logo.svg",
+    "dark": "https://cdn.prod.website-files.com/628a7fa3d53df316ad56015b/660f9d2acd58a995b434b157_Catalogix%20Logo.svg"
   },
   "api": {
     "baseUrl": "https://api.catalogix.ai/v1/",
