@@ -34,13 +34,34 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
         "introduction",
         "quickstart",
         "authentication",
         "errors",
         "product_information"
+      ]
+    },
+    {
+      "group": "Channels",
+      "pages": [
+        "Amazon",
+        "Flipkart",
+        "Myntra",
+        "Nykaa",
+        "Tatacliq",
+        "Ajio",
+        "Snapdeal"
+      ]
+    },
+    {
+      "group": "Connectors",
+      "pages": [
+        "Shopify"
+        "Amazon"
+        "Myntra"
+        "Magento"
       ]
     },
     {
