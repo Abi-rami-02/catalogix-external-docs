@@ -386,7 +386,7 @@
     },
     {
       "group": "Changelog",
-      "pages": ["changelog/Product-Updates"]
+      "pages": ["changelog/product-updates"]
     }
   ]
 }
