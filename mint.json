@@ -52,12 +52,24 @@
   "navigation": [
     {
       "group": "Getting Started",
+      "pages": ["introduction", "How To"]
+    },
+    {
+      "group": "User Guide",
       "pages": [
-        "introduction",
-        "quickstart",
-        "authentication",
-        "errors",
-        "product_information"
+        "user/Setting Up Your Account",
+        "user/authentication",
+        "user/errors",
+        "user/product_information"
+      ]
+    },
+    {
+      "group": "Developer Guide",
+      "pages": [
+        "developer/quickstart",
+        "developer/authentication",
+        "developer/errors",
+        "developer/product_information"
       ]
     },
     {
@@ -144,18 +156,18 @@
         {
           "group": "Europe",
           "pages": [
-            "channels/eu/amazon-uk",
-            "channels/eu/ebay-uk",
-            "channels/eu/amazon-de",
-            "channels/eu/ebay-de",
-            "channels/eu/otto",
-            "channels/eu/la moda (russia)",
-            "channels/eu/amazon-fr",
-            "channels/eu/cdiscount",
-            "channels/eu/amazon-it",
-            "channels/eu/amazon-es",
-            "channels/eu/bol",
             "channels/eu/allegro",
+            "channels/eu/Amazon France",
+            "channels/eu/Amazon Germany",
+            "channels/eu/Amazon Italy",
+            "channels/eu/Amazon Spain",
+            "channels/eu/Amazon UK",
+            "channels/eu/bol",
+            "channels/eu/cdiscount",
+            "channels/eu/Ebay Germany",
+            "channels/eu/Ebay UK",
+            "channels/eu/la moda (russia)",
+            "channels/eu/otto",
             "channels/eu/zalando"
           ]
         },
@@ -181,7 +193,7 @@
         {
           "group": "South America",
           "pages": [
-            "channels/sa/amazon-br",
+            "channels/sa/amazon",
             "channels/sa/mercadolibre",
             "channels/sa/americanas",
             "channels/sa/magazineluiza"
