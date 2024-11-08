@@ -78,7 +78,12 @@
     },
     {
       "group": "Pricing",
-      "pages": ["Plans", "Usage", "Refunds", "Limits"]
+      "pages": [
+        "pricing/Plans",
+        "pricing/Usage",
+        "pricing/Refunds",
+        "pricing/Limits"
+      ]
     },
     {
       "group": "Features",
@@ -197,14 +202,14 @@
         {
           "group": "Product Details",
           "pages": [
-            "user/details/channel-attribute-completion",
-            "user/details/channel-image-completion",
-            "user/details/channel-publish-status",
-            "user/details/product-information",
-            "user/details/multimedia",
-            "user/details/variants",
-            "user/details/related-products",
-            "user/details/activity"
+            "user/pdp/channel-attribute-completion",
+            "user/pdp/channel-image-completion",
+            "user/pdp/channel-publish-status",
+            "user/pdp/product-information",
+            "user/pdp/multimedia",
+            "user/pdp/variants",
+            "user/pdp/related-products",
+            "user/pdp/activity"
           ]
         },
         {
@@ -232,11 +237,11 @@
     {
       "group": "Developer Guide",
       "pages": [
-        "developer/quickstart",
-        "developer/authentication",
-        "developer/errors",
-        "developer/Rate Limits",
-        "developer/product_information"
+        "api-reference/developer/quickstart",
+        "api-reference/developer/authentication",
+        "api-reference/developer/errors",
+        "api-reference/developer/Rate Limits",
+        "api-reference/developer/product_information"
       ]
     },
     {
