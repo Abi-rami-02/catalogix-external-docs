@@ -52,15 +52,160 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["introduction", "How To"]
+      "pages": [
+        "Introduction",
+        {
+          "group": "Quickstart",
+          "pages": [
+            "Step 1. Create an Account",
+            "Step 2. Create a Workspace",
+            "Step 3. Create a Store",
+            "Step 4. Define a Store Taxonomy",
+            "Step 5. Import products",
+            "Step 6. Run an Automation",
+            "Step 7. Export product data"
+          ]
+        },
+        "user/errors",
+        "user/limits",
+        "user/fair use"
+      ]
     },
     {
-      "group": "User Guide",
+      "group": "Features",
       "pages": [
-        "user/Setting Up Your Account",
-        "user/authentication",
-        "user/errors",
-        "user/product_information"
+        {
+          "group": "Accounts",
+          "pages": [
+            "user/accounts/introduction",
+            "user/accounts/create-account",
+            "user/accounts/manage-account"
+          ]
+        },
+        {
+          "group": "Workspace",
+          "pages": [
+            "user/workspace/introduction",
+            "user/workspace/create-workspace",
+            "user/workspace/manage-workspace"
+          ]
+        },
+        {
+          "group": "Team",
+          "pages": [
+            "user/team/introduction",
+            "user/team/invite-members",
+            "user/team/manage-roles"
+          ]
+        },
+        {
+          "group": "Add Billing",
+          "pages": [
+            "user/billing/introduction",
+            "user/billing/payment-methods",
+            "user/billing/invoices"
+          ]
+        },
+        {
+          "group": "Store",
+          "pages": [
+            "user/store/create-store",
+            "user/store/import-settings",
+            "user/store/export-settings"
+          ]
+        },
+        {
+          "group": "Taxonomy",
+          "pages": [
+            "user/taxonomy/introduction",
+            "user/taxonomy/types-of-attributes",
+            "user/taxonomy/store-taxonomy",
+            "user/taxonomy/universal-marketplace-taxonomy",
+            "user/taxonomy/channel-taxonomy"
+          ]
+        },
+        {
+          "group": "Automations",
+          "pages": [
+            "user/automations/introduction",
+            "user/automations/image-classifier",
+            "user/automations/background-remover"
+          ]
+        },
+        {
+          "group": "Product Listing Page",
+          "pages": [
+            "user/plp/introduction",
+            "user/plp/edit-attributes",
+            "user/plp/product-statuses",
+            "user/plp/approval-percentage",
+            "user/plp/filters",
+            "user/plp/search",
+            "user/plp/group-edit",
+            "user/plp/export"
+          ]
+        },
+        {
+          "group": "Views",
+          "pages": [
+            "user/views/introduction",
+            "user/views/choose-columns",
+            "user/views/resize-rearrange-columns",
+            "user/views/freeze-columns",
+            "user/views/filters",
+            "user/views/data-highlights",
+            "user/views/edit-view",
+            "user/views/save-new-view"
+          ]
+        },
+        {
+          "group": "Collaboration and Activity",
+          "pages": [
+            "user/collab/introduction",
+            "user/collab/assign-products",
+            "user/collab/online-status",
+            "user/collab/sync-changes",
+            "user/collab/store-activity",
+            "user/collab/automation-history",
+            "user/collab/edit-history",
+            "user/collab/delete-history"
+          ]
+        },
+        {
+          "group": "Product Details",
+          "pages": [
+            "user/details/channel-attribute-completion",
+            "user/details/channel-image-completion",
+            "user/details/channel-publish-status",
+            "user/details/product-information",
+            "user/details/multimedia",
+            "user/details/variants",
+            "user/details/related-products",
+            "user/details/activity"
+          ]
+        },
+        {
+          "group": "Add Products",
+          "pages": [
+            "user/import/CSV or Excel File",
+            "user/import/Image Folders",
+            "user/import/Web Scraper",
+            "user/import/Feed URL or FTP",
+            "user/import/Shopify Connector",
+            "user/import/REST API",
+            "user/import/Create a Product in Catalogix"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "How To",
+      "pages": [
+        "how-to/delete a product",
+        "how-to/change the background of an image",
+        "how-to/update product information with a CSV file",
+        "how-to/reorder images",
+        "how-to/revoke access to a team member"
       ]
     },
     {
@@ -69,11 +214,12 @@
         "developer/quickstart",
         "developer/authentication",
         "developer/errors",
+        "developer/Rate Limits",
         "developer/product_information"
       ]
     },
     {
-      "group": "Channels",
+      "group": "Channels and Integrations",
       "pages": [
         "channels/overview",
         {
