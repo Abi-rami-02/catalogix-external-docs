@@ -47,6 +47,14 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Channels",
+      "url": "channels"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
   "navigation": [
@@ -65,11 +73,12 @@
             "Step 6. Run an Automation",
             "Step 7. Export product data"
           ]
-        },
-        "user/errors",
-        "user/limits",
-        "user/fair use"
+        }
       ]
+    },
+    {
+      "group": "Pricing",
+      "pages": ["Plans", "Usage", "Refunds", "Limits"]
     },
     {
       "group": "Features",
@@ -99,10 +108,12 @@
           ]
         },
         {
-          "group": "Add Billing",
+          "group": "Billing",
           "pages": [
             "user/billing/introduction",
             "user/billing/payment-methods",
+            "user/billing/usage-history",
+            "user/billing/auto-topup",
             "user/billing/invoices"
           ]
         },
@@ -117,7 +128,7 @@
         {
           "group": "Taxonomy",
           "pages": [
-            "user/taxonomy/introduction",
+            "user/taxonomy/overview",
             "user/taxonomy/types-of-attributes",
             "user/taxonomy/store-taxonomy",
             "user/taxonomy/universal-marketplace-taxonomy",
@@ -125,9 +136,21 @@
           ]
         },
         {
+          "group": "Import Products",
+          "pages": [
+            "user/import/CSV or Excel File",
+            "user/import/Image Folders",
+            "user/import/Web Scraper",
+            "user/import/Feed URL or FTP",
+            "user/import/Shopify Connector",
+            "user/import/REST API",
+            "user/import/Create a Product in Catalogix"
+          ]
+        },
+        {
           "group": "Automations",
           "pages": [
-            "user/automations/introduction",
+            "user/automations/overview",
             "user/automations/image-classifier",
             "user/automations/background-remover"
           ]
@@ -135,7 +158,7 @@
         {
           "group": "Product Listing Page",
           "pages": [
-            "user/plp/introduction",
+            "user/plp/overview",
             "user/plp/edit-attributes",
             "user/plp/product-statuses",
             "user/plp/approval-percentage",
@@ -148,7 +171,7 @@
         {
           "group": "Views",
           "pages": [
-            "user/views/introduction",
+            "user/views/overview",
             "user/views/choose-columns",
             "user/views/resize-rearrange-columns",
             "user/views/freeze-columns",
@@ -161,7 +184,7 @@
         {
           "group": "Collaboration and Activity",
           "pages": [
-            "user/collab/introduction",
+            "user/collab/overview",
             "user/collab/assign-products",
             "user/collab/online-status",
             "user/collab/sync-changes",
@@ -185,15 +208,13 @@
           ]
         },
         {
-          "group": "Add Products",
+          "group": "Exports",
           "pages": [
-            "user/import/CSV or Excel File",
-            "user/import/Image Folders",
-            "user/import/Web Scraper",
-            "user/import/Feed URL or FTP",
-            "user/import/Shopify Connector",
-            "user/import/REST API",
-            "user/import/Create a Product in Catalogix"
+            "user/exports/export current view",
+            "user/exports/export marketplace template",
+            "user/exports/export images",
+            "user/exports/sync with channel",
+            "user/exports/errors"
           ]
         }
       ]
@@ -220,131 +241,128 @@
     },
     {
       "group": "Channels and Integrations",
+      "pages": ["channels/overview"]
+    },
+    {
+      "group": "Platforms",
       "pages": [
-        "channels/overview",
-        {
-          "group": "Platforms",
-          "pages": [
-            "channels/pl/Facebook Shop",
-            "channels/pl/Google Merchant Center",
-            "channels/pl/Shopify",
-            "channels/pl/Magento"
-          ]
-        },
-        {
-          "group": "India",
-          "pages": [
-            "channels/in/amazon Seller",
-            "channels/in/amazon Appario Retail",
-            "channels/in/amazon Cloudtail",
-            "channels/in/amazon Cocoblu",
-            "channels/in/amazon Darshita Etech",
-            "channels/in/amazon Kartify",
-            "channels/in/amazon Rocket Kommerce",
-            "channels/in/amazon Supc",
-            "channels/in/bewakoof",
-            "channels/in/dealshare",
-            "channels/in/firstcry",
-            "channels/in/flipkart",
-            "channels/in/fynd",
-            "channels/in/increff",
-            "channels/in/inorbit",
-            "channels/in/meesho",
-            "channels/in/megamart",
-            "channels/in/myntra",
-            "channels/in/nnow",
-            "channels/in/nykaa",
-            "channels/in/shoppers stop",
-            "channels/in/shopsy",
-            "channels/in/snapdeal",
-            "channels/in/tatacliq"
-          ]
-        },
-        {
-          "group": "Middle East",
-          "pages": [
-            "channels/me/amazon UAE",
-            "channels/me/amazon Saudi Arabia",
-            "channels/me/amazon Kuwait",
-            "channels/me/amazon Bahrain",
-            "channels/me/amazon Qatar",
-            "channels/me/noon",
-            "channels/me/namshi",
-            "channels/me/souq",
-            "channels/me/jumia",
-            "channels/me/trendyol"
-          ]
-        },
-        {
-          "group": "Asia",
-          "pages": [
-            "channels/asia/amazon-jp",
-            "channels/asia/rakuten",
-            "channels/asia/shopee",
-            "channels/asia/lazada",
-            "channels/asia/taobao",
-            "channels/asia/tmall",
-            "channels/asia/jd"
-          ]
-        },
-        {
-          "group": "North America",
-          "pages": [
-            "channels/na/amazon-us",
-            "channels/na/walmart",
-            "channels/na/ebay-us",
-            "channels/na/amazon-ca",
-            "channels/na/bestbuy",
-            "channels/na/target",
-            "channels/na/homedepot"
-          ]
-        },
-        {
-          "group": "Europe",
-          "pages": [
-            "channels/eu/allegro",
-            "channels/eu/Amazon France",
-            "channels/eu/Amazon Germany",
-            "channels/eu/Amazon Italy",
-            "channels/eu/Amazon Spain",
-            "channels/eu/Amazon UK",
-            "channels/eu/bol",
-            "channels/eu/cdiscount",
-            "channels/eu/Ebay Germany",
-            "channels/eu/Ebay UK",
-            "channels/eu/la moda (russia)",
-            "channels/eu/otto",
-            "channels/eu/zalando"
-          ]
-        },
-
-        {
-          "group": "Oceania",
-          "pages": [
-            "channels/oc/amazon-au",
-            "channels/oc/ebay-au",
-            "channels/oc/kogan",
-            "channels/oc/trademe"
-          ]
-        },
-        {
-          "group": "Africa",
-          "pages": [
-            "channels/af/jumia",
-            "channels/af/takealot",
-            "channels/af/kilimall",
-            "channels/af/konga"
-          ]
-        },
-        {
-          "group": "South America",
-          "pages": [
-            "channels/sa/amazon",
-            "channels/sa/mercadolibre",
-            "channels/sa/americanas",
-            "channels/sa/magazineluiza"
-          ]
-        }
+        "channels/Facebook Shop",
+        "channels/Google Merchant Center",
+        "channels/Shopify",
+        "channels/Magento"
+      ]
+    },
+    {
+      "group": "India",
+      "pages": [
+        "channels/India/amazon Seller",
+        "channels/India/amazon Appario Retail",
+        "channels/india/amazon Cloudtail",
+        "channels/india/amazon Cocoblu",
+        "channels/india/amazon Darshita Etech",
+        "channels/india/amazon Kartify",
+        "channels/india/amazon Rocket Kommerce",
+        "channels/india/amazon Supc",
+        "channels/india/bewakoof",
+        "channels/india/dealshare",
+        "channels/india/firstcry",
+        "channels/india/flipkart",
+        "channels/india/fynd",
+        "channels/india/increff",
+        "channels/india/inorbit",
+        "channels/india/meesho",
+        "channels/india/megamart",
+        "channels/india/myntra",
+        "channels/india/nnow",
+        "channels/india/nykaa",
+        "channels/india/shoppers stop",
+        "channels/india/shopsy",
+        "channels/india/snapdeal",
+        "channels/india/tatacliq"
+      ]
+    },
+    {
+      "group": "Middle East",
+      "pages": [
+        "channels/middle-east/amazon UAE",
+        "channels/middle-east/amazon Saudi Arabia",
+        "channels/middle-east/amazon Kuwait",
+        "channels/middle-east/amazon Bahrain",
+        "channels/middle-east/amazon Qatar",
+        "channels/middle-east/noon",
+        "channels/middle-east/namshi",
+        "channels/middle-east/souq",
+        "channels/middle-east/jumia",
+        "channels/middle-east/trendyol"
+      ]
+    },
+    {
+      "group": "Asia",
+      "pages": [
+        "channels/asia/amazon-jp",
+        "channels/asia/rakuten",
+        "channels/asia/shopee",
+        "channels/asia/lazada",
+        "channels/asia/taobao",
+        "channels/asia/tmall",
+        "channels/asia/jd"
+      ]
+    },
+    {
+      "group": "North America",
+      "pages": [
+        "channels/north-america/amazon-us",
+        "channels/north-america/walmart",
+        "channels/north-america/ebay-us",
+        "channels/north-america/amazon-ca",
+        "channels/north-america/bestbuy",
+        "channels/north-america/target",
+        "channels/north-america/homedepot"
+      ]
+    },
+    {
+      "group": "Europe",
+      "pages": [
+        "channels/eu/allegro",
+        "channels/eu/Amazon France",
+        "channels/eu/Amazon Germany",
+        "channels/eu/Amazon Italy",
+        "channels/eu/Amazon Spain",
+        "channels/eu/Amazon UK",
+        "channels/eu/bol",
+        "channels/eu/cdiscount",
+        "channels/eu/Ebay Germany",
+        "channels/eu/Ebay UK",
+        "channels/eu/la moda (russia)",
+        "channels/eu/otto",
+        "channels/eu/zalando"
+      ]
+    },
+    {
+      "group": "Oceania",
+      "pages": [
+        "channels/oceania/amazon-au",
+        "channels/oceania/ebay-au",
+        "channels/oceania/kogan",
+        "channels/oceania/trademe"
+      ]
+    },
+    {
+      "group": "Africa",
+      "pages": [
+        "channels/africa/jumia",
+        "channels/africa/takealot",
+        "channels/africa/kilimall",
+        "channels/africa/konga"
+      ]
+    },
+    {
+      "group": "South America",
+      "pages": [
+        "channels/south-america/amazon",
+        "channels/south-america/mercadolibre",
+        "channels/south-america/americanas",
+        "channels/south-america/magazineluiza"
       ]
     },
     {
@@ -360,6 +378,10 @@
     {
       "group": "API Information",
       "pages": ["api-reference/api-information/rate-limiting-info"]
+    },
+    {
+      "group": "Changelog",
+      "pages": ["changelog/Product-Updates"]
     }
   ]
 }
