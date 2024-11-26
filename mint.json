@@ -49,10 +49,6 @@
       "url": "api-reference"
     },
     {
-      "name": "Channels",
-      "url": "channels"
-    },
-    {
       "name": "Changelog",
       "url": "changelog"
     }
@@ -62,177 +58,67 @@
       "group": "Getting Started",
       "pages": [
         "Introduction",
+        "Quickstart",
         {
-          "group": "Quickstart",
+          "group": "How To",
           "pages": [
-            "Step 1. Create an Account",
-            "Step 2. Create a Workspace",
-            "Step 3. Create a Store",
-            "Step 4. Define a Store Taxonomy",
-            "Step 5. Import products",
-            "Step 6. Run an Automation",
-            "Step 7. Export product data"
+            "how-to/delete a product",
+            "how-to/change the background of an image",
+            "how-to/update product information with a CSV file",
+            "how-to/reorder images",
+            "how-to/revoke access to a team member"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "features/Accounts",
+        "features/Workspace",
+        "features/Team",
+        "features/Billing",
+        "features/Store",
+        "features/Taxonomy",
+        "features/Add-Products",
+        "features/Automations",
+        "features/Product-Listing-Page",
+        "features/Views",
+        "features/Collaboration-and-Activity",
+        "features/Product-Details",
+        "features/Exports"
+      ]
+    },
+    {
+      "group": "Channels and Integrations",
+      "pages": [
+        {
+          "group": "Platforms",
+          "pages": [
+            "channels/Shopify",
+            "channels/Magento",
+            "channels/Facebook",
+            "channels/Google-Merchant-Center"
+          ]
+        },
+        {
+          "group": "Marketplaces",
+          "pages": [
+            "channels/India",
+            "channels/Middle-East",
+            "channels/Asia",
+            "channels/North-America",
+            "channels/Europe",
+            "channels/Oceania",
+            "channels/Latin America",
+            "channels/Africa"
           ]
         }
       ]
     },
     {
       "group": "Pricing",
-      "pages": [
-        "pricing/Plans",
-        "pricing/Usage",
-        "pricing/Refunds",
-        "pricing/Limits"
-      ]
-    },
-    {
-      "group": "Features",
-      "pages": [
-        {
-          "group": "Accounts",
-          "pages": [
-            "user/accounts/introduction",
-            "user/accounts/create-account",
-            "user/accounts/manage-account"
-          ]
-        },
-        {
-          "group": "Workspace",
-          "pages": [
-            "user/workspace/introduction",
-            "user/workspace/create-workspace",
-            "user/workspace/manage-workspace"
-          ]
-        },
-        {
-          "group": "Team",
-          "pages": [
-            "user/team/introduction",
-            "user/team/invite-members",
-            "user/team/manage-roles"
-          ]
-        },
-        {
-          "group": "Billing",
-          "pages": [
-            "user/billing/introduction",
-            "user/billing/payment-methods",
-            "user/billing/usage-history",
-            "user/billing/auto-topup",
-            "user/billing/invoices"
-          ]
-        },
-        {
-          "group": "Store",
-          "pages": [
-            "user/store/create-store",
-            "user/store/import-settings",
-            "user/store/export-settings"
-          ]
-        },
-        {
-          "group": "Taxonomy",
-          "pages": [
-            "user/taxonomy/overview",
-            "user/taxonomy/types-of-attributes",
-            "user/taxonomy/store-taxonomy",
-            "user/taxonomy/universal-marketplace-taxonomy",
-            "user/taxonomy/channel-taxonomy"
-          ]
-        },
-        {
-          "group": "Import Products",
-          "pages": [
-            "user/import/CSV or Excel File",
-            "user/import/Image Folders",
-            "user/import/Web Scraper",
-            "user/import/Feed URL or FTP",
-            "user/import/Shopify Connector",
-            "user/import/REST API",
-            "user/import/Create a Product in Catalogix"
-          ]
-        },
-        {
-          "group": "Automations",
-          "pages": [
-            "user/automations/overview",
-            "user/automations/image-classifier",
-            "user/automations/background-remover"
-          ]
-        },
-        {
-          "group": "Product Listing Page",
-          "pages": [
-            "user/plp/overview",
-            "user/plp/edit-attributes",
-            "user/plp/product-statuses",
-            "user/plp/approval-percentage",
-            "user/plp/filters",
-            "user/plp/search",
-            "user/plp/group-edit",
-            "user/plp/export"
-          ]
-        },
-        {
-          "group": "Views",
-          "pages": [
-            "user/views/overview",
-            "user/views/choose-columns",
-            "user/views/resize-rearrange-columns",
-            "user/views/freeze-columns",
-            "user/views/filters",
-            "user/views/data-highlights",
-            "user/views/edit-view",
-            "user/views/save-new-view"
-          ]
-        },
-        {
-          "group": "Collaboration and Activity",
-          "pages": [
-            "user/collab/overview",
-            "user/collab/assign-products",
-            "user/collab/online-status",
-            "user/collab/sync-changes",
-            "user/collab/store-activity",
-            "user/collab/automation-history",
-            "user/collab/edit-history",
-            "user/collab/delete-history"
-          ]
-        },
-        {
-          "group": "Product Details",
-          "pages": [
-            "user/pdp/channel-attribute-completion",
-            "user/pdp/channel-image-completion",
-            "user/pdp/channel-publish-status",
-            "user/pdp/product-information",
-            "user/pdp/multimedia",
-            "user/pdp/variants",
-            "user/pdp/related-products",
-            "user/pdp/activity"
-          ]
-        },
-        {
-          "group": "Exports",
-          "pages": [
-            "user/exports/export current view",
-            "user/exports/export marketplace template",
-            "user/exports/export images",
-            "user/exports/sync with channel",
-            "user/exports/errors"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "How To",
-      "pages": [
-        "how-to/delete a product",
-        "how-to/change the background of an image",
-        "how-to/update product information with a CSV file",
-        "how-to/reorder images",
-        "how-to/revoke access to a team member"
-      ]
+      "pages": ["pricing/plans", "pricing/usage"]
     },
     {
       "group": "Developer Guide",
@@ -245,132 +131,6 @@
       ]
     },
     {
-      "group": "Channels and Integrations",
-      "pages": ["channels/overview"]
-    },
-    {
-      "group": "Platforms",
-      "pages": [
-        "channels/Facebook Shop",
-        "channels/Google Merchant Center",
-        "channels/Shopify",
-        "channels/Magento"
-      ]
-    },
-    {
-      "group": "India",
-      "pages": [
-        "channels/India/amazon Seller",
-        "channels/India/amazon Appario Retail",
-        "channels/india/amazon Cloudtail",
-        "channels/india/amazon Cocoblu",
-        "channels/india/amazon Darshita Etech",
-        "channels/india/amazon Kartify",
-        "channels/india/amazon Rocket Kommerce",
-        "channels/india/amazon Supc",
-        "channels/india/bewakoof",
-        "channels/india/dealshare",
-        "channels/india/firstcry",
-        "channels/india/flipkart",
-        "channels/india/fynd",
-        "channels/india/increff",
-        "channels/india/inorbit",
-        "channels/india/meesho",
-        "channels/india/megamart",
-        "channels/india/myntra",
-        "channels/india/nnow",
-        "channels/india/nykaa",
-        "channels/india/shoppers stop",
-        "channels/india/shopsy",
-        "channels/india/snapdeal",
-        "channels/india/tatacliq"
-      ]
-    },
-    {
-      "group": "Middle East",
-      "pages": [
-        "channels/middle-east/amazon UAE",
-        "channels/middle-east/amazon Saudi Arabia",
-        "channels/middle-east/amazon Kuwait",
-        "channels/middle-east/amazon Bahrain",
-        "channels/middle-east/amazon Qatar",
-        "channels/middle-east/noon",
-        "channels/middle-east/namshi",
-        "channels/middle-east/souq",
-        "channels/middle-east/jumia",
-        "channels/middle-east/trendyol"
-      ]
-    },
-    {
-      "group": "Asia",
-      "pages": [
-        "channels/asia/amazon-jp",
-        "channels/asia/rakuten",
-        "channels/asia/shopee",
-        "channels/asia/lazada",
-        "channels/asia/taobao",
-        "channels/asia/tmall",
-        "channels/asia/jd"
-      ]
-    },
-    {
-      "group": "North America",
-      "pages": [
-        "channels/north-america/amazon-us",
-        "channels/north-america/walmart",
-        "channels/north-america/ebay-us",
-        "channels/north-america/amazon-ca",
-        "channels/north-america/bestbuy",
-        "channels/north-america/target",
-        "channels/north-america/homedepot"
-      ]
-    },
-    {
-      "group": "Europe",
-      "pages": [
-        "channels/eu/allegro",
-        "channels/eu/Amazon France",
-        "channels/eu/Amazon Germany",
-        "channels/eu/Amazon Italy",
-        "channels/eu/Amazon Spain",
-        "channels/eu/Amazon UK",
-        "channels/eu/bol",
-        "channels/eu/cdiscount",
-        "channels/eu/Ebay Germany",
-        "channels/eu/Ebay UK",
-        "channels/eu/la moda (russia)",
-        "channels/eu/otto",
-        "channels/eu/zalando"
-      ]
-    },
-    {
-      "group": "Oceania",
-      "pages": [
-        "channels/oceania/amazon-au",
-        "channels/oceania/ebay-au",
-        "channels/oceania/kogan",
-        "channels/oceania/trademe"
-      ]
-    },
-    {
-      "group": "Africa",
-      "pages": [
-        "channels/africa/jumia",
-        "channels/africa/takealot",
-        "channels/africa/kilimall",
-        "channels/africa/konga"
-      ]
-    },
-    {
-      "group": "South America",
-      "pages": [
-        "channels/south-america/amazon",
-        "channels/south-america/mercadolibre",
-        "channels/south-america/americanas",
-        "channels/south-america/magazineluiza"
-      ]
-    },
-    {
       "group": "Product APIs",
       "pages": [
         "api-reference/product-apis/retrieve-product-data",
@@ -379,10 +139,6 @@
         "api-reference/product-apis/retrieve-product-data-based-on-status",
         "api-reference/product-apis/delete-product-data"
       ]
-    },
-    {
-      "group": "API Information",
-      "pages": ["api-reference/api-information/rate-limiting-info"]
     },
     {
       "group": "Changelog",

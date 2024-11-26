@@ -1,0 +1,121 @@
+"group": "Platforms",
+      "pages": [
+        "channels/Facebook Shop",
+        "channels/Google Merchant Center",
+        "channels/Shopify",
+        "channels/Magento"
+      ]
+    },
+    {
+      "group": "India",
+      "pages": [
+        "channels/India/amazon Seller",
+        "channels/India/amazon Appario Retail",
+        "channels/india/amazon Cloudtail",
+        "channels/india/amazon Cocoblu",
+        "channels/india/amazon Darshita Etech",
+        "channels/india/amazon Kartify",
+        "channels/india/amazon Rocket Kommerce",
+        "channels/india/amazon Supc",
+        "channels/india/bewakoof",
+        "channels/india/dealshare",
+        "channels/india/firstcry",
+        "channels/india/flipkart",
+        "channels/india/fynd",
+        "channels/india/increff",
+        "channels/india/inorbit",
+        "channels/india/meesho",
+        "channels/india/megamart",
+        "channels/india/myntra",
+        "channels/india/nnow",
+        "channels/india/nykaa",
+        "channels/india/shoppers stop",
+        "channels/india/shopsy",
+        "channels/india/snapdeal",
+        "channels/india/tatacliq"
+      ]
+    },
+    {
+      "group": "Middle East",
+      "pages": [
+        "channels/middle-east/amazon UAE",
+        "channels/middle-east/amazon Saudi Arabia",
+        "channels/middle-east/amazon Kuwait",
+        "channels/middle-east/amazon Bahrain",
+        "channels/middle-east/amazon Qatar",
+        "channels/middle-east/noon",
+        "channels/middle-east/namshi",
+        "channels/middle-east/souq",
+        "channels/middle-east/jumia",
+        "channels/middle-east/trendyol"
+      ]
+    },
+    {
+      "group": "Asia",
+      "pages": [
+        "channels/asia/amazon-jp",
+        "channels/asia/rakuten",
+        "channels/asia/shopee",
+        "channels/asia/lazada",
+        "channels/asia/taobao",
+        "channels/asia/tmall",
+        "channels/asia/jd"
+      ]
+    },
+    {
+      "group": "North America",
+      "pages": [
+        "channels/north-america/amazon-us",
+        "channels/north-america/walmart",
+        "channels/north-america/ebay-us",
+        "channels/north-america/amazon-ca",
+        "channels/north-america/bestbuy",
+        "channels/north-america/target",
+        "channels/north-america/homedepot"
+      ]
+    },
+    {
+      "group": "Europe",
+      "pages": [
+        "channels/eu/allegro",
+        "channels/eu/Amazon France",
+        "channels/eu/Amazon Germany",
+        "channels/eu/Amazon Italy",
+        "channels/eu/Amazon Spain",
+        "channels/eu/Amazon UK",
+        "channels/eu/bol",
+        "channels/eu/cdiscount",
+        "channels/eu/Ebay Germany",
+        "channels/eu/Ebay UK",
+        "channels/eu/la moda (russia)",
+        "channels/eu/otto",
+        "channels/eu/zalando"
+      ]
+    },
+    {
+      "group": "Oceania",
+      "pages": [
+        "channels/oceania/amazon-au",
+        "channels/oceania/ebay-au",
+        "channels/oceania/kogan",
+        "channels/oceania/trademe"
+      ]
+    },
+    {
+      "group": "Africa",
+      "pages": [
+        "channels/africa/jumia",
+        "channels/africa/takealot",
+        "channels/africa/kilimall",
+        "channels/africa/konga"
+      ]
+    },
+    {
+      "group": "South America",
+      "pages": [
+        "channels/south-america/amazon",
+        "channels/south-america/mercadolibre",
+        "channels/south-america/americanas",
+        "channels/south-america/magazineluiza"
+      ]
+    },
