@@ -62,11 +62,11 @@
         {
           "group": "How To",
           "pages": [
-            "how-to/delete a product",
-            "how-to/change the background of an image",
-            "how-to/update product information with a CSV file",
-            "how-to/reorder images",
-            "how-to/revoke access to a team member"
+            "how-to/Delete a Product",
+            "how-to/Change the Background of an Image",
+            "how-to/Update Product Information with a CSV File",
+            "how-to/Reorder images",
+            "how-to/Revoke Access to a Team Member"
           ]
         }
       ]
