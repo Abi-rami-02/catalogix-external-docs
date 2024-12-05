@@ -72,6 +72,12 @@
       ]
     },
     {
+      "group": "Get Started",
+      "pages": [
+        "getting-started/Quickstart"
+      ]
+    },
+    {
       "group": "Features",
       "pages": [
         "features/Accounts",
