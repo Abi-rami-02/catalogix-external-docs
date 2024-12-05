@@ -57,23 +57,6 @@
     {
       "group": "Getting Started",
       "pages": [
-        "Introduction",
-        "Quickstart",
-        {
-          "group": "How To",
-          "pages": [
-            "how-to/Delete a Product",
-            "how-to/Change the Background of an Image",
-            "how-to/Update Product Information with a CSV File",
-            "how-to/Reorder images",
-            "how-to/Revoke Access to a Team Member"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Get Started",
-      "pages": [
         "getting-started/Quickstart"
       ]
     },
