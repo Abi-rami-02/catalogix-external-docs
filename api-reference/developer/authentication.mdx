@@ -1,17 +1,31 @@
----
-title: 'Authentication'
----
+Catalogix’s REST APIs use the API Key to authenticate and authorize calls.
+**Follow the steps listed here to get started**.
+<Steps>
+  <Step title="Developers Section">
+    Create an account on catalogix and go to your active workspace then developers section in there.
+    <Frame caption="Developer Tab">
+  <img src= "https://assets.catalogix.ai/8e867e29301b7c713646b5894df04e3a" />
+</Frame>
+  </Step>
+  <Step title="Create API key">
+  Click on the create API key button and name the API you can also select which stores you want to access with that particular API key.
+  <Frame caption="API key creation">
+  <img src= "https://assets.catalogix.ai/25f36d8b2aee5b2847e55978059c5ecd" />
+</Frame>
 
-Catalogix's REST APIs use the API Key to authenticate and authorize calls. Follow the steps listed here to get started.
+  </Step>
+  <Step title="Copy API key">
+    Make sure to copy the API key in a secure location because you would not be able to see the API key after this step.
+    <Frame caption="API key creation">
+  <img src= "https://assets.catalogix.ai/5970d0482f2305fd17f4bcbdb3114e26" />
+</Frame>
+  </Step>
 
-Step 1: Registering your store and getting API Key
-Catalogix will register your store and provide you a API Key. Please reach out to help@catalogix.ai to get started.
+</Steps>
 
+**For calling an API** : You can call any API included in your subscription using the generated API Key. Pass the API Key in the header as follows:
 
-Step 2: Calling an API
-You can call any API included in your subscription using the generated API Key.
-Pass the API Key in the header as follows:
-
-apikey: {token}
+apikey:
 
 You can use the same API Key for all APIs.
+

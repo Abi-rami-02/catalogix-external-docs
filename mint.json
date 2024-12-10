@@ -81,15 +81,7 @@
     {
       "group": "Channels and Integrations",
       "pages": [
-        {
-          "group": "Platforms",
-          "pages": [
-            "channels/Shopify",
-            "channels/Magento",
-            "channels/Facebook",
-            "channels/Google-Merchant-Center"
-          ]
-        },
+        "channels/Platforms",
         {
           "group": "Marketplaces",
           "pages": [
@@ -104,10 +96,6 @@
           ]
         }
       ]
-    },
-    {
-      "group": "Pricing",
-      "pages": ["pricing/plans", "pricing/usage"]
     },
     {
       "group": "Developer Guide",
