@@ -851,31 +851,6 @@
             "type": "string",
             "title": "Image Url 20",
             "description": "Image URL 20"
-          },
-          "Extra attribute 1": {
-            "type": "string",
-            "title": "Extra Attribute 1",
-            "description": "Extra attribute 1"
-          },
-          "Extra attribute 2": {
-            "type": "string",
-            "title": "Extra Attribute 2",
-            "description": "Extra attribute 1"
-          },
-          "Extra attribute 3": {
-            "type": "string",
-            "title": "Extra Attribute 3",
-            "description": "Extra attribute 1"
-          },
-          "Extra attribute 4": {
-            "type": "string",
-            "title": "Extra Attribute 4",
-            "description": "Extra attribute 1"
-          },
-          "Extra attribute 5": {
-            "type": "string",
-            "title": "Extra Attribute 5",
-            "description": "Extra attribute 1"
           }
         },
         "type": "object",
