@@ -226,30 +226,6 @@
             }
           },
           {
-            "name": "marketplace",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "default": "SMP",
-              "title": "Marketplace"
-            }
-          },
-          {
-            "name": "retrieval_type",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "enum": [
-                "default",
-                "all"
-              ],
-              "type": "string",
-              "default": "default",
-              "title": "Retrieval Type"
-            }
-          },
-          {
             "name": "sku_codes",
             "in": "query",
             "required": true,
@@ -333,30 +309,6 @@
             "schema": {
               "type": "string",
               "title": "Store Uuid"
-            }
-          },
-          {
-            "name": "marketplace",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "default": "SMP",
-              "title": "Marketplace"
-            }
-          },
-          {
-            "name": "retrieval_type",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "enum": [
-                "default",
-                "all"
-              ],
-              "type": "string",
-              "default": "default",
-              "title": "Retrieval Type"
             }
           },
           {
@@ -960,11 +912,6 @@
               "problem"
             ],
             "title": "Status"
-          },
-          "Product Attribute": {
-            "type": "string",
-            "title": "Product Attribute",
-            "description": "Product attribute to be updated"
           }
         },
         "type": "object",
