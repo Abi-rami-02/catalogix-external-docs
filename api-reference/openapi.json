@@ -35,7 +35,8 @@
             "schema": {
               "type": "string",
               "title": "Store Uuid"
-            }
+            },
+            "example": "67762d4ce590324df813bd8c"
           },
           {
             "name": "apikey",
@@ -44,7 +45,8 @@
             "schema": {
               "type": "string",
               "title": "Apikey"
-            }
+            },
+            "example": "Api key"
           }
         ],
         "requestBody": {
@@ -129,7 +131,8 @@
             "schema": {
               "type": "string",
               "title": "Store Uuid"
-            }
+            },
+            "example": "67762d4ce590324df813bd8c"
           },
           {
             "name": "apikey",
@@ -138,7 +141,8 @@
             "schema": {
               "type": "string",
               "title": "Apikey"
-            }
+            },
+            "example": "Api key"
           }
         ],
         "requestBody": {
@@ -223,7 +227,8 @@
             "schema": {
               "type": "string",
               "title": "Store Uuid"
-            }
+            },
+            "example": "67762d4ce590324df813bd8c"
           },
           {
             "name": "sku_codes",
@@ -237,7 +242,7 @@
               "description": "List of SKU Codes or Style codes based on selected type to be retrieved",
               "title": "Sku Codes"
             },
-            "description": "List of SKU Codes or Style codes based on selected type to be retrieved"
+            "example": "CI005",
           },
           {
             "name": "apikey",
@@ -246,7 +251,8 @@
             "schema": {
               "type": "string",
               "title": "Apikey"
-            }
+            },
+            "example": "API key"
           }
         ],
         "responses": {
@@ -256,6 +262,24 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/RetrieveDataResponse"
+                },
+                "example": {
+                      "status": {
+                        "code": 0,
+                        "message": "success"
+                      },
+                      "data": {
+                        "store_uuid": "67762d4ce590324df813bd8c",
+                        "data": [
+                          {
+                            "CI005": {
+                              "Category": "shirts",
+                              "SKU Code": "CI005",
+                              "status": "active"
+                            }
+                          }
+                        ]
+                      }
                 }
               }
             }
@@ -309,7 +333,8 @@
             "schema": {
               "type": "string",
               "title": "Store Uuid"
-            }
+            },
+            "example": "67762d4ce590324df813bd8c"
           },
           {
             "name": "status",
@@ -327,7 +352,8 @@
               "type": "string",
               "default": "active",
               "title": "Status"
-            }
+            },
+            "example": "active"
           },
           {
             "name": "offset",
@@ -338,7 +364,8 @@
               "minimum": 0,
               "default": 0,
               "title": "Offset"
-            }
+            },
+            "example": 0
           },
           {
             "name": "limit",
@@ -349,7 +376,8 @@
               "exclusiveMinimum": 0,
               "default": 100,
               "title": "Limit"
-            }
+            },
+            "example": 100
           },
           {
             "name": "apikey",
@@ -358,7 +386,8 @@
             "schema": {
               "type": "string",
               "title": "Apikey"
-            }
+            },
+            "example": "api key"
           }
         ],
         "responses": {
@@ -368,6 +397,24 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/RetrieveDataResponse"
+                },
+                "example": {
+                      "status": {
+                        "code": 0,
+                        "message": "success"
+                      },
+                      "data": {
+                        "store_uuid": "67762d4ce590324df813bd8c",
+                        "data": [
+                          {
+                            "CI005": {
+                              "Category": "shirts",
+                              "SKU Code": "CI005",
+                              "status": "active"
+                            }
+                          }
+                        ]
+                      }
                 }
               }
             }
@@ -421,7 +468,8 @@
             "schema": {
               "type": "string",
               "title": "Store Uuid"
-            }
+            },
+            "example": "67762d4ce590324df813bd8c"
           },
           {
             "name": "sku_codes",
@@ -434,8 +482,7 @@
               },
               "description": "List of SKU Codes needs to be deleted",
               "title": "Sku Codes"
-            },
-            "description": "List of SKU Codes needs to be deleted"
+            }
           },
           {
             "name": "apikey",
@@ -444,7 +491,8 @@
             "schema": {
               "type": "string",
               "title": "Apikey"
-            }
+            },
+            "example": "Api key"
           }
         ],
         "responses": {
@@ -454,7 +502,13 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/DeleteDataResponse"
-                }
+                },
+                "example": {
+                      "status": {
+                        "code": 0,
+                        "message": "success"
+                      }
+                    }
               }
             }
           },
@@ -571,14 +625,16 @@
           "store_uuid": {
             "type": "string",
             "title": "Store Uuid",
-            "description": "Unique identifier for the store"
+            "description": "Unique identifier for the store",
+            "example":"67762d4ce590324df813bd8c"
           },
           "response": {
             "items": {
               "type": "object"
             },
             "type": "array",
-            "title": "Response"
+            "title": "Response",
+            "example": [{"metadata":{"SKU Code":"CI005","errors":["Category"]}}]
           },
           "product_already_exists": {
             "items": {
@@ -586,7 +642,7 @@
             },
             "type": "array",
             "title": "Product Already Exists",
-            "default": []
+            "default": ["CI001"]
           }
         },
         "type": "object",
@@ -627,7 +683,7 @@
           "store_uuid": {
             "type": "string",
             "title": "Store Uuid",
-            "description": "Unique identifier for the store"
+            "description": "Unique identifier for the store",
           },
           "marketplace": {
             "type": "string",
@@ -682,128 +738,81 @@
           "SKU Code": {
             "type": "string",
             "title": "Sku Code",
-            "description": "Unique identifier for the product"
+            "description": "Unique identifier for the product",
+            "example":"CI005"
           },
           "Style Code": {
             "type": "string",
             "title": "Style Code",
-            "description": "Style Code of the product. Style Code contains multiple SKU Codes"
+            "description": "Style Code of the product. Style Code contains multiple SKU Codes",
+            "example":"SC005"
           },
           "Product Name": {
             "type": "string",
             "title": "Product Name",
-            "description": "Product Name/Title"
+            "description": "Product Name/Title",
+            "example":"Blue shirts"
+          },
+          "Department": {
+            "type": "string",
+            "title": "Department",
+            "description": "Product Name/Title",
+            "example":"Men"
+          },
+          "Category": {
+            "type": "string",
+            "title": "Category",
+            "description": "product category",
+            "example":"Dupatta"
           },
           "Selling Price": {
             "type": "string",
             "title": "Selling Price",
-            "description": "Selling Price"
+            "description": "Selling Price",
+            "example":"1000"
           },
           "Currency": {
             "type": "string",
             "title": "Currency",
-            "description": "Currency"
+            "description": "Currency",
+            "example":"INR"
           },
           "Image URL 1": {
             "type": "string",
             "title": "Image Url 1",
-            "description": "Image URL 1"
+            "description": "Image URL 1",
+            "example":"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a"
           },
           "Image URL 2": {
             "type": "string",
             "title": "Image Url 2",
-            "description": "Image URL 2"
+            "description": "Image URL 2",
+            "example":"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57"
           },
           "Image URL 3": {
             "type": "string",
             "title": "Image Url 3",
-            "description": "Image URL 3"
+            "description": "Image URL 3",
+            "example":"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6"
           },
           "Image URL 4": {
             "type": "string",
             "title": "Image Url 4",
-            "description": "Image URL 4"
+            "description": "Image URL 4",
+            "example":"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa"
           },
           "Image URL 5": {
             "type": "string",
             "title": "Image Url 5",
+            "example":"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a",
             "description": "Image URL 5"
           },
           "Image URL 6": {
             "type": "string",
             "title": "Image Url 6",
-            "description": "Image URL 6"
+            "description": "Image URL 6",
+            "example":"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1"
           },
-          "Image URL 7": {
-            "type": "string",
-            "title": "Image Url 7",
-            "description": "Image URL 7"
-          },
-          "Image URL 8": {
-            "type": "string",
-            "title": "Image Url 8",
-            "description": "Image URL 8"
-          },
-          "Image URL 9": {
-            "type": "string",
-            "title": "Image Url 9",
-            "description": "Image URL 9"
-          },
-          "Image URL 10": {
-            "type": "string",
-            "title": "Image Url 10",
-            "description": "Image URL 10"
-          },
-          "Image URL 11": {
-            "type": "string",
-            "title": "Image Url 11",
-            "description": "Image URL 11"
-          },
-          "Image URL 12": {
-            "type": "string",
-            "title": "Image Url 12",
-            "description": "Image URL 12"
-          },
-          "Image URL 13": {
-            "type": "string",
-            "title": "Image Url 13",
-            "description": "Image URL 13"
-          },
-          "Image URL 14": {
-            "type": "string",
-            "title": "Image Url 14",
-            "description": "Image URL 14"
-          },
-          "Image URL 15": {
-            "type": "string",
-            "title": "Image Url 15",
-            "description": "Image URL 15"
-          },
-          "Image URL 16": {
-            "type": "string",
-            "title": "Image Url 16",
-            "description": "Image URL 16"
-          },
-          "Image URL 17": {
-            "type": "string",
-            "title": "Image Url 17",
-            "description": "Image URL 17"
-          },
-          "Image URL 18": {
-            "type": "string",
-            "title": "Image Url 18",
-            "description": "Image URL 18"
-          },
-          "Image URL 19": {
-            "type": "string",
-            "title": "Image Url 19",
-            "description": "Image URL 19"
-          },
-          "Image URL 20": {
-            "type": "string",
-            "title": "Image Url 20",
-            "description": "Image URL 20"
-          }
         },
         "type": "object",
         "required": [
@@ -816,12 +825,14 @@
           "code": {
             "type": "integer",
             "title": "Code",
-            "description": "Status code of the operation. 1 means success. -1 means failure. 0 means process moved to background"
+            "description": "Status code of the operation. 1 means success. -1 means failure. 0 means process moved to background",
+            "example":0
           },
           "message": {
             "type": "string",
             "title": "Message",
-            "description": "Message describing the status"
+            "description": "Message describing the status",
+            "example":"success"
           }
         },
         "type": "object",
@@ -836,7 +847,8 @@
           "store_uuid": {
             "type": "string",
             "title": "Store Uuid",
-            "description": "Unique identifier for the store"
+            "description": "Unique identifier for the store",
+            "example":"67762d4ce590324df813bd8c"
           },
           "response": {
             "items": {
@@ -844,7 +856,8 @@
             },
             "type": "array",
             "title": "Response",
-            "description": "Response containing errors if any for SKU Code update"
+            "description": "Response containing errors if any for SKU Code update",
+            "example":[{"metadata":{"SKU Code":"CI005","errors":["Status"]}}],
           },
           "updated_skus": {
             "items": {
@@ -853,7 +866,7 @@
             "type": "array",
             "title": "Updated Skus",
             "description": "List of SKUs that were successfully updated",
-            "default": []
+            "default": ["CI005"]
           },
           "unavailable_skus": {
             "items": {
@@ -862,7 +875,7 @@
             "type": "array",
             "title": "Unavailable Skus",
             "description": "List of SKUs that were unavailable for update",
-            "default": []
+            "default": ["CI00000000"]
           }
         },
         "type": "object",
@@ -903,7 +916,20 @@
           "SKU Code": {
             "type": "string",
             "title": "Sku Code",
-            "description": "Unique identifier for the product. Cannot be updated"
+            "description": "Unique identifier for the product. Cannot be updated",
+            "example":"CI005",
+          },
+          "Category": {
+            "type": "string",
+            "title": "Cataegory",
+            "description": "Unique identifier for the product. Cannot be updated",
+            "example": "Shirts"
+          },
+          "Department": {
+            "type": "string",
+            "title": "Department",
+            "description": "Unique identifier for the product. Cannot be updated",
+            "example": "Men"
           },
           "Status": {
             "type": "string",
@@ -911,7 +937,8 @@
               "active",
               "problem"
             ],
-            "title": "Status"
+            "title": "Status",
+            "example":"inactive"
           }
         },
         "type": "object",
