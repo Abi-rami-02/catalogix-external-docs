@@ -114,7 +114,39 @@
               }
             }
           }
-        }
+        },
+        "x-codeSamples": [
+              {
+                "lang": "cURL",
+                "label": "cUrl",
+                "source": "curl --location --request POST 'https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c' \\\n--header 'apikey: apikey' \\\n--header 'Content-Type: application/json' \\\n--data-raw '[\n  {\n    \"SKU Code\": \"CI005\",\n    \"Style Code\": \"SC005\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]'"
+              },
+              {
+                "lang": "Python",
+                "label": "Python",
+                "source": "import requests\nimport json\n\nurl = \"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\"\n\npayload = json.dumps([\n  {\n    \"SKU Code\": \"CI005\",\n    \"Style Code\": \"SC005\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n])\nheaders = {\n  'apikey': 'apikey',\n  'Content-Type': 'application/json'\n}\n\nresponse = requests.request(\"POST\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
+              },
+              {
+                "lang": "JavaScript",
+                "label": "JavaScript",
+                "source": "var myHeaders = new Headers();\nmyHeaders.append(\"apikey\", \"apikey\");\nmyHeaders.append(\"Content-Type\", \"application/json\");\n\nvar raw = JSON.stringify([\n  {\n    \"SKU Code\": \"CI005\",\n    \"Style Code\": \"SC005\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]);\n\nvar requestOptions = {\n  method: 'POST',\n  headers: myHeaders,\n  body: raw,\n  redirect: 'follow'\n};\n\nfetch(\"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\", requestOptions)\n  .then(response => response.text())\n  .then(result => console.log(result))\n  .catch(error => console.log('error', error));"
+              },
+              {
+                "lang": "PHP",
+                "label": "PHP",
+                "source": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, array(\n  CURLOPT_URL => 'https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c',\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => '',\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 0,\n  CURLOPT_FOLLOWLOCATION => true,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => 'POST',\n  CURLOPT_POSTFIELDS =>'[\n  {\n    \"SKU Code\": \"CI005\",\n    \"Style Code\": \"SC005\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]',\n  CURLOPT_HTTPHEADER => array(\n    'apikey: apikey',\n    'Content-Type: application/json'\n  ),\n));\n\n$response = curl_exec($curl);\n\ncurl_close($curl);\necho $response;\n"
+              },
+              {
+                "lang": "Go",
+                "label": "Go",
+                "source": "package main\n\nimport (\n  \"fmt\"\n  \"strings\"\n  \"net/http\"\n  \"io/ioutil\"\n)\n\nfunc main() {\n\n  url := \"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\"\n  method := \"POST\"\n\n  payload := strings.NewReader(`[\n  {\n    \"SKU Code\": \"CI005\",\n    \"Style Code\": \"SC005\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]`)\n\n  client := &http.Client {\n  }\n  req, err := http.NewRequest(method, url, payload)\n\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  req.Header.Add(\"apikey\", \"apikey\")\n  req.Header.Add(\"Content-Type\", \"application/json\")\n\n  res, err := client.Do(req)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  defer res.Body.Close()\n\n  body, err := ioutil.ReadAll(res.Body)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  fmt.Println(string(body))\n}"
+              },
+              {
+                "lang": "Java",
+                "label": "Java",
+                "source": "Unirest.setTimeouts(0, 0);\nHttpResponse<String> response = Unirest.post(\"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\")\n  .header(\"apikey\", \"apikey\")\n  .header(\"Content-Type\", \"application/json\")\n  .body(\"[\\n  {\\n    \\\"SKU Code\\\": \\\"CI005\\\",\\n    \\\"Style Code\\\": \\\"SC005\\\",\\n    \\\"Product Name\\\": \\\"Blue shirts\\\",\\n    \\\"Department\\\": \\\"Men\\\",\\n    \\\"Category\\\": \\\"Dupatta\\\",\\n    \\\"Selling Price\\\": \\\"1000\\\",\\n    \\\"Currency\\\": \\\"INR\\\",\\n    \\\"Image URL 1\\\": \\\"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\\\",\\n    \\\"Image URL 2\\\": \\\"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\\\",\\n    \\\"Image URL 3\\\": \\\"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\\\",\\n    \\\"Image URL 4\\\": \\\"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\\\",\\n    \\\"Image URL 5\\\": \\\"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\\\",\\n    \\\"Image URL 6\\\": \\\"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\\\"\\n  }\\n]\")\n  .asString();\n"
+              }
+            ]
       },
       "put": {
         "tags": [
@@ -210,7 +242,39 @@
               }
             }
           }
-        }
+        },
+        "x-codeSamples": [
+              {
+                "lang": "cURL",
+                "label": "cUrl",
+                "source": "curl --location --request PUT 'https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c' \\\n--header 'apikey: apikey' \\\n--header 'Content-Type: application/json' \\\n--data-raw '[\n  {\n    \"SKU Code\": \"CI005\",\n    \"Category\": \"Shirts\",\n    \"Department\": \"Men\",\n    \"Status\": \"inactive\"\n  }\n]'"
+              },
+              {
+                "lang": "Python",
+                "label": "Python",
+                "source": "import requests\nimport json\n\nurl = \"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\"\n\npayload = json.dumps([\n  {\n    \"SKU Code\": \"CI005\",\n    \"Category\": \"Shirts\",\n    \"Department\": \"Men\",\n    \"Status\": \"inactive\"\n  }\n])\nheaders = {\n  'apikey': 'apikey',\n  'Content-Type': 'application/json'\n}\n\nresponse = requests.request(\"PUT\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
+              },
+              {
+                "lang": "JavaScript",
+                "label": "JavaScript",
+                "source": "var myHeaders = new Headers();\nmyHeaders.append(\"apikey\", \"apikey\");\nmyHeaders.append(\"Content-Type\", \"application/json\");\n\nvar raw = JSON.stringify([\n  {\n    \"SKU Code\": \"CI005\",\n    \"Category\": \"Shirts\",\n    \"Department\": \"Men\",\n    \"Status\": \"inactive\"\n  }\n]);\n\nvar requestOptions = {\n  method: 'PUT',\n  headers: myHeaders,\n  body: raw,\n  redirect: 'follow'\n};\n\nfetch(\"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\", requestOptions)\n  .then(response => response.text())\n  .then(result => console.log(result))\n  .catch(error => console.log('error', error));"
+              },
+              {
+                "lang": "PHP",
+                "label": "PHP",
+                "source": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, array(\n  CURLOPT_URL => 'https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c',\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => '',\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 0,\n  CURLOPT_FOLLOWLOCATION => true,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => 'PUT',\n  CURLOPT_POSTFIELDS =>'[\n  {\n    \"SKU Code\": \"CI005\",\n    \"Category\": \"Shirts\",\n    \"Department\": \"Men\",\n    \"Status\": \"inactive\"\n  }\n]',\n  CURLOPT_HTTPHEADER => array(\n    'apikey: apikey',\n    'Content-Type: application/json'\n  ),\n));\n\n$response = curl_exec($curl);\n\ncurl_close($curl);\necho $response;\n"
+              },
+              {
+                "lang": "Go",
+                "label": "Go",
+                "source": "package main\n\nimport (\n  \"fmt\"\n  \"strings\"\n  \"net/http\"\n  \"io/ioutil\"\n)\n\nfunc main() {\n\n  url := \"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\"\n  method := \"PUT\"\n\n  payload := strings.NewReader(`[\n  {\n    \"SKU Code\": \"CI005\",\n    \"Category\": \"Shirts\",\n    \"Department\": \"Men\",\n    \"Status\": \"inactive\"\n  }\n]`)\n\n  client := &http.Client {\n  }\n  req, err := http.NewRequest(method, url, payload)\n\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  req.Header.Add(\"apikey\", \"apikey\")\n  req.Header.Add(\"Content-Type\", \"application/json\")\n\n  res, err := client.Do(req)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  defer res.Body.Close()\n\n  body, err := ioutil.ReadAll(res.Body)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  fmt.Println(string(body))\n}"
+              },
+              {
+                "lang": "Java",
+                "label": "Java",
+                "source": "Unirest.setTimeouts(0, 0);\nHttpResponse<String> response = Unirest.put(\"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\")\n  .header(\"apikey\", \"apikey\")\n  .header(\"Content-Type\", \"application/json\")\n  .body(\"[\\n  {\\n    \\\"SKU Code\\\": \\\"CI005\\\",\\n    \\\"Category\\\": \\\"Shirts\\\",\\n    \\\"Department\\\": \\\"Men\\\",\\n    \\\"Status\\\": \\\"inactive\\\"\\n  }\\n]\")\n  .asString();\n"
+              }
+            ]
       },
       "get": {
         "tags": [
@@ -314,7 +378,39 @@
               }
             }
           }
-        }
+        },
+        "x-codeSamples": [
+              {
+                "lang": "cURL",
+                "label": "cUrl",
+                "source": "curl --location --request GET 'https://api.catalogix.ai/v1/products?sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c' \\\n--header 'apikey: apikey'"
+              },
+              {
+                "lang": "Python",
+                "label": "Python",
+                "source": "import requests\n\nurl = \"https://api.catalogix.ai/v1/products&sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c\"\n\nheaders = {\n  'apikey': 'apikey'\n}\n\nresponse = requests.request(\"GET\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
+              },
+              {
+                "lang": "JavaScript",
+                "label": "JavaScript",
+                "source": "var myHeaders = new Headers();\nmyHeaders.append(\"apikey\", \"apikey\");\n\nvar requestOptions = {\n  method: 'GET',\n  headers: myHeaders,\n  redirect: 'follow'\n};\n\nfetch(\"https://api.catalogix.ai/v1/products?sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c\", requestOptions)\n  .then(response => response.text())\n  .then(result => console.log(result))\n  .catch(error => console.log('error', error));"
+              },
+              {
+                "lang": "PHP",
+                "label": "PHP",
+                "source": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, array(\n  CURLOPT_URL => 'https://api.catalogix.ai/v1/products?sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c',\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => '',\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 0,\n  CURLOPT_FOLLOWLOCATION => true,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => 'GET',\n  CURLOPT_HTTPHEADER => array(\n    'apikey: apikey'\n  ),\n));\n\n$response = curl_exec($curl);\n\ncurl_close($curl);\necho $response;\n"
+              },
+              {
+                "lang": "Go",
+                "label": "Go",
+                "source": "package main\n\nimport (\n  \"fmt\"\n  \"net/http\"\n  \"io/ioutil\"\n)\n\nfunc main() {\n\n  url := \"https://api.catalogix.ai/v1/products?sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c\"\n  method := \"GET\"\n\n  client := &http.Client {\n  }\n  req, err := http.NewRequest(method, url, nil)\n\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  req.Header.Add(\"apikey\", \"apikey\")\n\n  res, err := client.Do(req)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  defer res.Body.Close()\n\n  body, err := ioutil.ReadAll(res.Body)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  fmt.Println(string(body))\n}"
+              },
+              {
+                "lang": "Java",
+                "label": "Java",
+                "source": "Unirest.setTimeouts(0, 0);\nHttpResponse<String> response = Unirest.get(\"https://api.catalogix.ai/v1/products?sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c\")\n  .header(\"apikey\", \"apikey\")\n  .asString();\n"
+              }
+            ]
       }
     },
     "/products/status": {
@@ -449,7 +545,39 @@
               }
             }
           }
-        }
+        },
+        "x-codeSamples": [
+              {
+                "lang": "cURL",
+                "label": "cUrl",
+                "source": "curl --location --request GET 'https://api.catalogix.ai/v1/products/status?store_uuid=67762d4ce590324df813bd8c&offset=0&limit=100&status=active' \\\n--header 'apikey: apikey'"
+              },
+              {
+                "lang": "Python",
+                "label": "Python",
+                "source": "import requests\n\nurl = \"https://api.catalogix.ai/v1/products/status?store_uuid=67762d4ce590324df813bd8c&offset=0&limit=100&status=active\"\n\npayload={}\nheaders = {\n  'apikey': 'apikey'\n}\n\nresponse = requests.request(\"GET\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
+              },
+              {
+                "lang": "JavaScript",
+                "label": "JavaScript",
+                "source": "var myHeaders = new Headers();\nmyHeaders.append(\"apikey\", \"apikey\");\n\nvar requestOptions = {\n  method: 'GET',\n  headers: myHeaders,\n  redirect: 'follow'\n};\n\nfetch(\"https://api.catalogix.ai/v1/products/status?store_uuid=67762d4ce590324df813bd8c&offset=0&limit=100&status=active\", requestOptions)\n  .then(response => response.text())\n  .then(result => console.log(result))\n  .catch(error => console.log('error', error));"
+              },
+              {
+                "lang": "PHP",
+                "label": "PHP",
+                "source": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, array(\n  CURLOPT_URL => 'https://api.catalogix.ai/v1/products/status?store_uuid=67762d4ce590324df813bd8c&offset=0&limit=100&status=active',\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => '',\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 0,\n  CURLOPT_FOLLOWLOCATION => true,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => 'GET',\n  CURLOPT_HTTPHEADER => array(\n    'apikey: apikey'\n  ),\n));\n\n$response = curl_exec($curl);\n\ncurl_close($curl);\necho $response;\n"
+              },
+              {
+                "lang": "Go",
+                "label": "Go",
+                "source": "package main\n\nimport (\n  \"fmt\"\n  \"net/http\"\n  \"io/ioutil\"\n)\n\nfunc main() {\n\n  url := \"https://api.catalogix.ai/v1/products/status?store_uuid=67762d4ce590324df813bd8c&offset=0&limit=100&status=active\"\n  method := \"GET\"\n\n  client := &http.Client {\n  }\n  req, err := http.NewRequest(method, url, nil)\n\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  req.Header.Add(\"apikey\", \"apikey\")\n\n  res, err := client.Do(req)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  defer res.Body.Close()\n\n  body, err := ioutil.ReadAll(res.Body)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  fmt.Println(string(body))\n}"
+              },
+              {
+                "lang": "Java",
+                "label": "Java",
+                "source": "Unirest.setTimeouts(0, 0);\nHttpResponse<String> response = Unirest.get(\"https://api.catalogix.ai/v1/products/status?store_uuid=67762d4ce590324df813bd8c&offset=0&limit=100&status=active\")\n  .header(\"apikey\", \"apikey\")\n  .asString();\n"
+              }
+            ]
       }
     },
     "/products/delete": {
@@ -542,7 +670,39 @@
               }
             }
           }
-        }
+        },
+        "x-codeSamples": [
+              {
+                "lang": "cURL",
+                "label": "cUrl",
+                "source": "curl --location --request DELETE 'https://api.catalogix.ai/v1/products/delete?sku_codes=code&store_uuid=67762d4ce590324df813bd8c' \\\n--header 'apikey: apikey'"
+              },
+              {
+                "lang": "Python",
+                "label": "Python",
+                "source": "import requests\n\nurl = \"https://api.catalogix.ai/v1/products/delete?sku_codes=code&store_uuid=67762d4ce590324df813bd8c\"\n\npayload={}\nheaders = {\n  'apikey': 'apikey'\n}\n\nresponse = requests.request(\"DELETE\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
+              },
+              {
+                "lang": "JavaScript",
+                "label": "JavaScript",
+                "source": "var myHeaders = new Headers();\nmyHeaders.append(\"apikey\", \"apikey\");\n\nvar requestOptions = {\n  method: 'DELETE',\n  headers: myHeaders,\n  redirect: 'follow'\n};\n\nfetch(\"https://api.catalogix.ai/v1/products/delete?sku_codes=code&store_uuid=67762d4ce590324df813bd8c\", requestOptions)\n  .then(response => response.text())\n  .then(result => console.log(result))\n  .catch(error => console.log('error', error));"
+              },
+              {
+                "lang": "PHP",
+                "label": "PHP",
+                "source": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, array(\n  CURLOPT_URL => 'https://api.catalogix.ai/v1/products/delete?sku_codes=code&store_uuid=67762d4ce590324df813bd8c',\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => '',\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 0,\n  CURLOPT_FOLLOWLOCATION => true,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => 'DELETE',\n  CURLOPT_HTTPHEADER => array(\n    'apikey: apikey'\n  ),\n));\n\n$response = curl_exec($curl);\n\ncurl_close($curl);\necho $response;\n"
+              },
+              {
+                "lang": "Go",
+                "label": "Go",
+                "source": "package main\n\nimport (\n  \"fmt\"\n  \"net/http\"\n  \"io/ioutil\"\n)\n\nfunc main() {\n\n  url := \"https://api.catalogix.ai/v1/products/delete?sku_codes=code&store_uuid=67762d4ce590324df813bd8c\"\n  method := \"DELETE\"\n\n  client := &http.Client {\n  }\n  req, err := http.NewRequest(method, url, nil)\n\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  req.Header.Add(\"apikey\", \"apikey\")\n\n  res, err := client.Do(req)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  defer res.Body.Close()\n\n  body, err := ioutil.ReadAll(res.Body)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  fmt.Println(string(body))\n}"
+              },
+              {
+                "lang": "Java",
+                "label": "Java",
+                "source": "Unirest.setTimeouts(0, 0);\nHttpResponse<String> response = Unirest.delete(\"https://api.catalogix.ai/v1/products/delete?sku_codes=code&store_uuid=67762d4ce590324df813bd8c\")\n  .header(\"apikey\", \"apikey\")\n  .asString();\n"
+              }
+            ]
       }
     },
     "/rate-limit-info": {
