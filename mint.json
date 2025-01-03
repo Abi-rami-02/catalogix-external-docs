@@ -100,7 +100,6 @@
     {
       "group": "Developer Guide",
       "pages": [
-        "api-reference/developer/quickstart",
         "api-reference/developer/authentication",
         "api-reference/developer/errors",
         "api-reference/developer/Rate-Limits",
