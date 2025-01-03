@@ -388,7 +388,7 @@
               {
                 "lang": "Python",
                 "label": "Python",
-                "source": "import requests\n\nurl = \"https://api.catalogix.ai/v1/products&sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c\"\n\nheaders = {\n  'apikey': 'apikey'\n}\n\nresponse = requests.request(\"GET\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
+                "source": "import requests\n\nurl = \"https://api.catalogix.ai/v1/products?sku_codes=CI005&store_uuid=67762d4ce590324df813bd8c\"\n\nheaders = {\n  'apikey': 'apikey'\n}\n\nresponse = requests.request(\"GET\", url, headers=headers)\n\nprint(response.text)\n"
               },
               {
                 "lang": "JavaScript",
