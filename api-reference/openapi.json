@@ -901,77 +901,24 @@
             "description": "Unique identifier for the product",
             "example":"CI001"
           },
-          "Style Code": {
-            "type": "string",
-            "title": "Style Code",
-            "description": "Style Code of the product. Style Code contains multiple SKU Codes",
-            "example":"SC001"
-          },
-          "Product Name": {
-            "type": "string",
-            "title": "Product Name",
-            "description": "Product Name/Title",
-            "example":"Blue shirts"
-          },
-          "Department": {
-            "type": "string",
-            "title": "Department",
-            "description": "Product Name/Title",
-            "example":"Men"
-          },
-          "Category": {
-            "type": "string",
-            "title": "Category",
-            "description": "product category",
-            "example":"Dupatta"
-          },
-          "Selling Price": {
-            "type": "string",
-            "title": "Selling Price",
-            "description": "Selling Price",
-            "example":"1000"
-          },
-          "Currency": {
-            "type": "string",
-            "title": "Currency",
-            "description": "Currency",
-            "example":"INR"
-          },
           "Image URL 1": {
             "type": "string",
             "title": "Image Url 1",
             "description": "Image URL 1",
             "example":"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a"
           },
-          "Image URL 2": {
+          "status": {
             "type": "string",
-            "title": "Image Url 2",
-            "description": "Image URL 2",
-            "example":"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57"
-          },
-          "Image URL 3": {
-            "type": "string",
-            "title": "Image Url 3",
-            "description": "Image URL 3",
-            "example":"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6"
-          },
-          "Image URL 4": {
-            "type": "string",
-            "title": "Image Url 4",
-            "description": "Image URL 4",
-            "example":"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa"
-          },
-          "Image URL 5": {
-            "type": "string",
-            "title": "Image Url 5",
-            "example":"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a",
-            "description": "Image URL 5"
-          },
-          "Image URL 6": {
-            "type": "string",
-            "title": "Image Url 6",
-            "description": "Image URL 6",
-            "example":"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1"
+            "enum": [
+              "new",
+              "active",
+              "problem",
+              "inactive",
+              "draft",
+              "under review"
+            ],
+            "title": "Status",
+            "example":"inactive"
           }
         },
         "type": "object",
@@ -1079,23 +1026,15 @@
             "description": "Unique identifier for the product. Cannot be updated",
             "example":"CI001"
           },
-          "Category": {
-            "type": "string",
-            "title": "Cataegory",
-            "description": "Unique identifier for the product. Cannot be updated",
-            "example": "Shirts"
-          },
-          "Department": {
-            "type": "string",
-            "title": "Department",
-            "description": "Unique identifier for the product. Cannot be updated",
-            "example": "Men"
-          },
-          "Status": {
+          "status": {
             "type": "string",
             "enum": [
+              "new",
               "active",
-              "problem"
+              "problem",
+              "inactive",
+              "draft",
+              "under review"
             ],
             "title": "Status",
             "example":"inactive"
