@@ -24,7 +24,9 @@
   "search": { "location": "top", "prompt": "Search..." },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#2AB673",
+    "light": "#55D799",
+    "dark": "#117866",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
