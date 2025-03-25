@@ -829,7 +829,7 @@
                 "tags": [
                     "Store"
                 ],
-                "summary": "Store",
+                "summary": "Create Store",
                 "operationId": "store_v1_store_post",
                 "parameters": [
                     {
