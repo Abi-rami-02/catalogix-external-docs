@@ -111,21 +111,26 @@
     {
       "group": "Product APIs",
       "pages": [
-        "api-reference/product-apis/retrieve-product-data",
-        "api-reference/product-apis/update-product-data",
         "api-reference/product-apis/insert-product-data",
+        "api-reference/product-apis/retrieve-product-data",
         "api-reference/product-apis/retrieve-product-data-based-on-status",
-        "api-reference/product-apis/delete-product-data",
-        "api-reference/product-apis/image-upload"
+        "api-reference/product-apis/update-product-data",
+        "api-reference/product-apis/delete-product-data"
       ]
     },
     {
       "group": "Store APIs",
       "pages": [
         "api-reference/store-apis/create-store",
-        "api-reference/store-apis/update-store",
         "api-reference/store-apis/retrieve-store",
+        "api-reference/store-apis/update-store",
         "api-reference/store-apis/delete-store"
+      ]
+    },
+    {
+      "group": "Asset APIs",
+      "pages": [
+        "api-reference/product-apis/image-upload"
       ]
     },
     {
