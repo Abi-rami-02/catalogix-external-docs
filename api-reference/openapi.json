@@ -112,27 +112,33 @@
                         }
                     }
                 },
-                "x-codeSamples": [{
+                "x-codeSamples": [
+                    {
                         "lang": "cURL",
                         "label": "cUrl",
                         "source": "curl --location --request POST 'https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c' \\\n--header 'apikey: apikey' \\\n--header 'Content-Type: application/json' \\\n--data-raw '[\n  {\n    \"product_code\": \"CI001\",\n    \"parent_code\": \"SC001\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]'"
-                    }, {
+                    },
+                    {
                         "lang": "Python",
                         "label": "Python",
                         "source": "import requests\nimport json\n\nurl = \"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\"\n\npayload = json.dumps([\n  {\n    \"product_code\": \"CI001\",\n    \"parent_code\": \"SC001\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n])\nheaders = {\n  'apikey': 'apikey',\n  'Content-Type': 'application/json'\n}\n\nresponse = requests.request(\"POST\", url, headers=headers, data=payload)\n\nprint(response.text)\n"
-                    }, {
+                    },
+                    {
                         "lang": "JavaScript",
                         "label": "JavaScript",
                         "source": "var myHeaders = new Headers();\nmyHeaders.append(\"apikey\", \"apikey\");\nmyHeaders.append(\"Content-Type\", \"application/json\");\n\nvar raw = JSON.stringify([\n  {\n    \"product_code\": \"CI001\",\n    \"parent_code\": \"SC001\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]);\n\nvar requestOptions = {\n  method: 'POST',\n  headers: myHeaders,\n  body: raw,\n  redirect: 'follow'\n};\n\nfetch(\"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\", requestOptions)\n  .then(response => response.text())\n  .then(result => console.log(result))\n  .catch(error => console.log('error', error));"
-                    }, {
+                    },
+                    {
                         "lang": "PHP",
                         "label": "PHP",
                         "source": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, array(\n  CURLOPT_URL => 'https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c',\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => '',\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 0,\n  CURLOPT_FOLLOWLOCATION => true,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => 'POST',\n  CURLOPT_POSTFIELDS =>'[\n  {\n    \"product_code\": \"CI001\",\n    \"parent_code\": \"SC001\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]',\n  CURLOPT_HTTPHEADER => array(\n    'apikey: apikey',\n    'Content-Type: application/json'\n  ),\n));\n\n$response = curl_exec($curl);\n\ncurl_close($curl);\necho $response;\n"
-                    }, {
+                    },
+                    {
                         "lang": "Go",
                         "label": "Go",
                         "source": "package main\n\nimport (\n  \"fmt\"\n  \"strings\"\n  \"net/http\"\n  \"io/ioutil\"\n)\n\nfunc main() {\n\n  url := \"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\"\n  method := \"POST\"\n\n  payload := strings.NewReader(`[\n  {\n    \"product_code\": \"CI001\",\n    \"parent_code\": \"SC001\",\n    \"Product Name\": \"Blue shirts\",\n    \"Department\": \"Men\",\n    \"Category\": \"Dupatta\",\n    \"Selling Price\": \"1000\",\n    \"Currency\": \"INR\",\n    \"Image URL 1\": \"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\",\n    \"Image URL 2\": \"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\",\n    \"Image URL 3\": \"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\",\n    \"Image URL 4\": \"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\",\n    \"Image URL 5\": \"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\",\n    \"Image URL 6\": \"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\"\n  }\n]`)\n\n  client := &http.Client {\n  }\n  req, err := http.NewRequest(method, url, payload)\n\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  req.Header.Add(\"apikey\", \"apikey\")\n  req.Header.Add(\"Content-Type\", \"application/json\")\n\n  res, err := client.Do(req)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  defer res.Body.Close()\n\n  body, err := ioutil.ReadAll(res.Body)\n  if err != nil {\n    fmt.Println(err)\n    return\n  }\n  fmt.Println(string(body))\n}"
-                    }, {
+                    },
+                    {
                         "lang": "Java",
                         "label": "Java",
                         "source": "Unirest.setTimeouts(0, 0);\nHttpResponse<String> response = Unirest.post(\"https://api.catalogix.ai/v1/products?store_uuid=67762d4ce590324df813bd8c\")\n  .header(\"apikey\", \"apikey\")\n  .header(\"Content-Type\", \"application/json\")\n  .body(\"[\\n  {\\n    \\\"product_code\\\": \\\"CI001\\\",\\n    \\\"parent_code\\\": \\\"SC001\\\",\\n    \\\"Product Name\\\": \\\"Blue shirts\\\",\\n    \\\"Department\\\": \\\"Men\\\",\\n    \\\"Category\\\": \\\"Dupatta\\\",\\n    \\\"Selling Price\\\": \\\"1000\\\",\\n    \\\"Currency\\\": \\\"INR\\\",\\n    \\\"Image URL 1\\\": \\\"https://assets-test.catalogix.ai/dee9c181338099b931cde78787df567a\\\",\\n    \\\"Image URL 2\\\": \\\"https://assets-test.catalogix.ai/b9e0a674584b15df799a2d2a7bcb6f57\\\",\\n    \\\"Image URL 3\\\": \\\"https://assets-test.catalogix.ai/3d8f430ce3bc623e8037aac988a889c6\\\",\\n    \\\"Image URL 4\\\": \\\"https://assets-test.catalogix.ai/e263183310aa0093381bf48a6d8540aa\\\",\\n    \\\"Image URL 5\\\": \\\"https://assets-test.catalogix.ai/38d253f0fb7aad878ae270e2c612467a\\\",\\n    \\\"Image URL 6\\\": \\\"https://assets-test.catalogix.ai/5733be608a3f9303af5d7dd14621d2d1\\\"\\n  }\\n]\")\n  .asString();\n"
@@ -676,6 +682,266 @@
                     }
                 }
             }
+        },
+        "/store/{store_id}": {
+            "get": {
+                "tags": [
+                    "Store"
+                ],
+                "summary": "Retrieve Store Info",
+                "operationId": "retrieve_store_info_v1_store__store_id__get",
+                "parameters": [
+                    {
+                        "name": "store_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Store Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/RetrieveStoreResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Store"
+                ],
+                "summary": "Update Store",
+                "operationId": "store_v1_store__store_id__put",
+                "parameters": [
+                    {
+                        "name": "store_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Store Id"
+                        }
+                    },
+                    {
+                        "name": "workspace_id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Workspace Id"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreUpdateModel"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/StoreUpdateResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Store"
+                ],
+                "summary": "Delete Store",
+                "operationId": "store_v1_store__store_id__delete",
+                "parameters": [
+                    {
+                        "name": "store_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Store Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DeleteStoreResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/store": {
+            "post": {
+                "tags": [
+                    "Store"
+                ],
+                "summary": "Store",
+                "operationId": "store_v1_store_post",
+                "parameters": [
+                    {
+                        "name": "workspace_id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Workspace Id"
+                        }
+                    },
+                    {
+                        "name": "copy_taxonomy",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "Copy Taxonomy"
+                        }
+                    },
+                    {
+                        "name": "linked_store_id",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "title": "Linked Store Id"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreCreateModel"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/StoreCreateResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/asset/upload": {
+            "post": {
+                "tags": [
+                    "File Upload"
+                ],
+                "summary": "Images",
+                "operationId": "images_v1_asset_upload_post",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AssetUploadModel"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/AssetUploadResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -1045,6 +1311,616 @@
                     "type"
                 ],
                 "title": "ValidationError"
+            },
+            "ChannelEnum": {
+                "type": "string",
+                "enum": [
+                    "6683299176",
+                    "bewakoof",
+                    "celio-THG",
+                    "hm-belgium",
+                    "brand_taxonomy_67762d4ce590324df813bd8c_67762d4ce590324df813bd8c_taxonomy",
+                    "2707143388",
+                    "myntra-OR",
+                    "brand_taxonomy_67a06908d57e27c925a8dc88_67a06908d57e27c925a8dc88_taxonomy",
+                    "brand_taxonomy_679ccc267f1e24cd3e43bbfd_679ccc267f1e24cd3e43bbfd_taxonomy",
+                    "myntra_b2b",
+                    "streamoid-4",
+                    "brand_taxonomy_678f340713a07f335b634e7e_678f340713a07f335b634e7e_taxonomy",
+                    "mytest009",
+                    "5529249361",
+                    "brand_taxonomy_679762233f8813055a044bea_679762233f8813055a044bea_taxonomy",
+                    "likeme-spanish",
+                    "brand_taxonomy_67aaf6d4cb8e5dd0a094b46f_67aaf6d4cb8e5dd0a094b46f_taxonomy",
+                    "3757702609",
+                    "amazon_uae",
+                    "brand_taxonomy_677fb5aa97b9416931ddf3d3_677fb5aa97b9416931ddf3d3_taxonomy",
+                    "likeme-english",
+                    "brand_taxonomy_679b2bfc7f1e24cd3e4363ab_679b2bfc7f1e24cd3e4363ab_taxonomy",
+                    "8366955551",
+                    "brand_taxonomy_6799be50066d414f5b5481c7_6799be50066d414f5b5481c7_taxonomy",
+                    "qaz",
+                    "mytest1",
+                    "nykaa",
+                    "levis",
+                    "brand_taxonomy_679375b638a0f043f28cb335_679375b638a0f043f28cb335_taxonomy",
+                    "1870135504",
+                    "myntra",
+                    "ajio-levis",
+                    "shopify",
+                    "brand_taxonomy_679b021ec4d3a7ae789a19fd_679b021ec4d3a7ae789a19fd_taxonomy",
+                    "test1",
+                    "4378518116",
+                    "brand_taxonomy_6799beb4066d414f5b54820a_6799beb4066d414f5b54820a_taxonomy",
+                    "abfrl-american_eagle",
+                    "newme-poc",
+                    "noon",
+                    "malabar",
+                    "hm-austria",
+                    "tcns-folksong_shopify",
+                    "hm-italy",
+                    "brand_taxonomy_6799bedb066d414f5b548223_6799bedb066d414f5b548223_taxonomy",
+                    "7193736018",
+                    "brand_taxonomy_678a031cf2fd7f5d3b538b59_678a031cf2fd7f5d3b538b59_taxonomy",
+                    "jaypore-fashion",
+                    "brand_taxonomy_6790de5a0d3dea541dc4b1ba_6790de5a0d3dea541dc4b1ba_taxonomy",
+                    "5021314083",
+                    "ajio_offline",
+                    "facebook",
+                    "2904539342",
+                    "abfrl-peter_england",
+                    "brand_taxonomy_679a14bb066d414f5b54a25f_679a14bb066d414f5b54a25f_taxonomy",
+                    "brand_taxonomy_679cccdb7f1e24cd3e43bc8a_679cccdb7f1e24cd3e43bc8a_taxonomy",
+                    "SMP-test",
+                    "ajiob2b",
+                    "brand_taxonomy_6788dfa5666bbe2dc4668c3a_6788dfa5666bbe2dc4668c3a_taxonomy",
+                    "brand_taxonomy_679b464c7f1e24cd3e436fc8_679b464c7f1e24cd3e436fc8_taxonomy",
+                    "brand_taxonomy_67b30c9c6951b0bc350dd00f_67b30c9c6951b0bc350dd00f_taxonomy",
+                    "brand_taxonomy_67b71ba309625e6428d3b2d1_67b71ba309625e6428d3b2d1_taxonomy",
+                    "megamart",
+                    "mytestdsep",
+                    "shopify-inati",
+                    "brand_taxonomy_67b315936951b0bc350dd39d_67b315936951b0bc350dd39d_taxonomy",
+                    "test3",
+                    "trell",
+                    "brand_taxonomy_6780b319833c8567142b0f5f_6780b319833c8567142b0f5f_taxonomy",
+                    "8807888037",
+                    "ajio-vendor",
+                    "hm-sweden",
+                    "0929935766",
+                    "9419003745",
+                    "brand_taxonomy_6799ddd0066d414f5b548ed6_6799ddd0066d414f5b548ed6_taxonomy",
+                    "brand_taxonomy_67ab1f68cb8e5dd0a094c2b1_67ab1f68cb8e5dd0a094c2b1_taxonomy",
+                    "flipkart_parser",
+                    "terra",
+                    "abfrl-allen_solly",
+                    "amazon_home_and_kitchen",
+                    "4485473761",
+                    "5184474271",
+                    "7911749833",
+                    "hm-germany",
+                    "brand_taxonomy_679b3c107f1e24cd3e4369bc_679b3c107f1e24cd3e4369bc_taxonomy",
+                    "amzn",
+                    "amazon",
+                    "brand_taxonomy_678d539d9cb155684560e1ce_678d539d9cb155684560e1ce_taxonomy",
+                    "brand_taxonomy_675ff1f991123c4a4dc58c74_675ff1f991123c4a4dc58c74_taxonomy",
+                    "3685380851",
+                    "brand_taxonomy_678f337213a07f335b634e4b_678f337213a07f335b634e4b_taxonomy",
+                    "calvin-klein",
+                    "flipkart",
+                    "landmark-homecentre",
+                    "ajiob2c",
+                    "nnnow-poc",
+                    "0683520797",
+                    "2130348785",
+                    "test-amazon",
+                    "brand_taxonomy_67864f06057c2b8bc97dc5e6_67864f06057c2b8bc97dc5e6_taxonomy",
+                    "opasjf",
+                    "mytestd6",
+                    "limeroad",
+                    "brand_taxonomy_679b0416c4d3a7ae789a1be5_679b0416c4d3a7ae789a1be5_taxonomy",
+                    "4166753876",
+                    "brand_taxonomy_679cb35f7f1e24cd3e43af41_679cb35f7f1e24cd3e43af41_taxonomy",
+                    "jaypore",
+                    "abfrl-forever_21",
+                    "abfrl-louis_philippe",
+                    "7977568411",
+                    "landmark-lifestyle",
+                    "nnnow",
+                    "abfrl-simon_carter",
+                    "nyka",
+                    "brand_taxonomy_678880d24429c3452c5bc7f5_678880d24429c3452c5bc7f5_taxonomy",
+                    "brand_taxonomy_my_test_my_test_taxonomy",
+                    "brand_taxonomy_679ccb057f1e24cd3e43bb52_679ccb057f1e24cd3e43bb52_taxonomy",
+                    "brand_taxonomy_678515a3a5a78b9acfd50b4d_678515a3a5a78b9acfd50b4d_taxonomy",
+                    "abfrl-LP",
+                    "reebok",
+                    "hm-denmark",
+                    "shoppers_stop",
+                    "1287673354",
+                    "being-human",
+                    "brand_taxonomy_67862fada5a78b9acfd51839_67862fada5a78b9acfd51839_taxonomy",
+                    "mytest011",
+                    "1152004508",
+                    "snapdeal",
+                    "levis_in",
+                    "brand_taxonomy_678f73579cb15568456124d6_678f73579cb15568456124d6_taxonomy",
+                    "brand_taxonomy_67936e9838a0f043f28caf6a_67936e9838a0f043f28caf6a_taxonomy",
+                    "brand_taxonomy_679c7bca7f1e24cd3e439ad3_679c7bca7f1e24cd3e439ad3_taxonomy",
+                    "brand_taxonomy_67800feb833c8567142b06e7_67800feb833c8567142b06e7_taxonomy",
+                    "3289785717",
+                    "SMP-Bewakoof",
+                    "amazon-vendor",
+                    "grupo-soma",
+                    "9735623648",
+                    "brand_taxonomy_679cb8ae7f1e24cd3e43b175_679cb8ae7f1e24cd3e43b175_taxonomy",
+                    "brand_taxonomy_6788a0c1f2fd7f5d3b536de4_6788a0c1f2fd7f5d3b536de4_taxonomy",
+                    "abfrl-PE",
+                    "fynd",
+                    "hm-norway",
+                    "adidas",
+                    "ajio-arvind",
+                    "ajio-pvh",
+                    "5075482586",
+                    "brand_taxonomy_6799b46e066d414f5b547f90_6799b46e066d414f5b547f90_taxonomy",
+                    "firstcry",
+                    "test32",
+                    "arvind-lifestyle",
+                    "brand_taxonomy_679b27f77f1e24cd3e436129_679b27f77f1e24cd3e436129_taxonomy",
+                    "abfrl-VH",
+                    "tatacliq-vendor",
+                    "abfrl-PER",
+                    "snitch",
+                    "brand_taxonomy_6757bb1c89c7d694394565e2_brand_taxonomy_6757bb1c89c7d694394565e2_6757bb1c89c7d694394565e2_taxonomy",
+                    "brand_taxonomy_677e35872be7a6414be3d220_677e35872be7a6414be3d220_taxonomy",
+                    "9519804022",
+                    "abfrl-reebok",
+                    "brand_taxonomy_67a0725209794cc518bb8173_67a0725209794cc518bb8173_taxonomy",
+                    "brand_taxonomy_67bca00c7dd904115cf21ec8_67bca00c7dd904115cf21ec8_taxonomy",
+                    "firstcry-pvh",
+                    "hm-spain",
+                    "brand_taxonomy_6757dcda89c7d69439456ac0_6757dcda89c7d69439456ac0_taxonomy",
+                    "tatacliq",
+                    "brand_taxonomy_6799ca7d066d414f5b5485fc_6799ca7d066d414f5b5485fc_taxonomy",
+                    "hm-portugal",
+                    "1626604587",
+                    "brand_taxonomy_679b29467f1e24cd3e436243_679b29467f1e24cd3e436243_taxonomy",
+                    "dealshare",
+                    "mytest012",
+                    "abfrl-the_collective",
+                    "tatacliq-pvh",
+                    "jaypore-home",
+                    "google",
+                    "mytestd3",
+                    "abfrl-SC",
+                    "brand_taxonomy_676d2f91b9dc267038bcc1d9_676d2f91b9dc267038bcc1d9_taxonomy",
+                    "brand_taxonomy_679da4fc7f1e24cd3e43c8f7_679da4fc7f1e24cd3e43c8f7_taxonomy",
+                    "abc",
+                    "mytestd1",
+                    "vinculum",
+                    "jiomart",
+                    "7866062285",
+                    "brand_taxonomy_67a4632b46c09290bf6dccb6_67a4632b46c09290bf6dccb6_taxonomy",
+                    "flipkart_b2b",
+                    "shopify-levis",
+                    "brand_taxonomy_677e173fcd2707470df30801_677e173fcd2707470df30801_taxonomy",
+                    "ajio_qc_ontology",
+                    "brand_taxonomy_678a032ff2fd7f5d3b538b78_678a032ff2fd7f5d3b538b78_taxonomy",
+                    "newme",
+                    "8872975228",
+                    "5964229786",
+                    "9304782128",
+                    "brand_taxonomy_677d0d260f9490920c3c307e_677d0d260f9490920c3c307e_taxonomy",
+                    "shopsy",
+                    "brand_taxonomy_676a8f8d2de1ca0056ae84bd_676a8f8d2de1ca0056ae84bd_taxonomy",
+                    "3177530750",
+                    "0841475124",
+                    "1764988715",
+                    "1128946544",
+                    "5502190200",
+                    "brand_taxonomy_679b03f0c4d3a7ae789a1ba4_679b03f0c4d3a7ae789a1ba4_taxonomy",
+                    "brand_taxonomy_678023a9833c8567142b0aa2_678023a9833c8567142b0aa2_taxonomy",
+                    "brand_taxonomy_67931c11e2ad6cda5f823063_67931c11e2ad6cda5f823063_taxonomy",
+                    "namshi",
+                    "0460114717",
+                    "brand_taxonomy_67a06ad6d57e27c925a8dd27_67a06ad6d57e27c925a8dd27_taxonomy",
+                    "6558817903",
+                    "test",
+                    "mytestdq",
+                    "brand_taxonomy_67b2bf9d6951b0bc350db4e6_67b2bf9d6951b0bc350db4e6_taxonomy",
+                    "abfrl-peterengland_red",
+                    "brand_taxonomy_679bbe877f1e24cd3e4386fd_679bbe877f1e24cd3e4386fd_taxonomy",
+                    "eshopbox",
+                    "brand_taxonomy_6757bb1c89c7d694394565e2_6757bb1c89c7d694394565e2_taxonomy",
+                    "brand_taxonomy_678135f0998a15674e7ce9c1_678135f0998a15674e7ce9c1_taxonomy",
+                    "8727794221",
+                    "hm-finland",
+                    "brand_taxonomy_678d56feb280d29e080e169d_678d56feb280d29e080e169d_taxonomy",
+                    "hm-netherlands",
+                    "inati",
+                    "tatacliq-arvind",
+                    "amazon_canada",
+                    "brand_taxonomy_679b19aa7f1e24cd3e435936_679b19aa7f1e24cd3e435936_taxonomy",
+                    "magento",
+                    "abfrl-AS",
+                    "6790239504",
+                    "brand_taxonomy_678f211a9cb1556845610d05_678f211a9cb1556845610d05_taxonomy",
+                    "brand_taxonomy_678defa39cb155684560ee01_678defa39cb155684560ee01_taxonomy",
+                    "8850681656",
+                    "brand_taxonomy_67d801982961cc2710d76e67_67d801982961cc2710d76e67_taxonomy",
+                    "abfrl-F21",
+                    "hm-poland",
+                    "7656907284",
+                    "mytest013",
+                    "2741000338",
+                    "brand_taxonomy_67d803ba2961cc2710d76f50_67d803ba2961cc2710d76f50_taxonomy",
+                    "brand_taxonomy_678f1f6d9cb1556845610cb2_678f1f6d9cb1556845610cb2_taxonomy",
+                    "6965219053",
+                    "shopify-arvind",
+                    "inorbit",
+                    "test2",
+                    "5070781144",
+                    "3883971944",
+                    "4313650809",
+                    "hm-greatbritain",
+                    "brand_taxonomy_677f9ef48881fb3f3b0fe1cf_677f9ef48881fb3f3b0fe1cf_taxonomy",
+                    "SMP",
+                    "landmark",
+                    "test44",
+                    "brand_taxonomy_6789f041f2fd7f5d3b5388cb_6789f041f2fd7f5d3b5388cb_taxonomy",
+                    "amazon-seller",
+                    "brand_taxonomy_679dbb727f1e24cd3e43d044_679dbb727f1e24cd3e43d044_taxonomy",
+                    "tommy-hilfiger",
+                    "8532295677",
+                    "9722167152",
+                    "brand_taxonomy_67bdb32e7dd904115cf345ae_67bdb32e7dd904115cf345ae_taxonomy",
+                    "test-mp",
+                    "meesho",
+                    "tasva",
+                    "9164460994",
+                    "flipkart_vendor",
+                    "abfrl-van_heusen",
+                    "amazon-US",
+                    "brand_taxonomy_67b5b839fd9f23551e72b460_67b5b839fd9f23551e72b460_taxonomy",
+                    "test_sg",
+                    "abfrl-ABOF",
+                    "8872695512",
+                    "tcns-shopify",
+                    "0634126100",
+                    "brand_taxonomy_67b40b0a6951b0bc350dd956_67b40b0a6951b0bc350dd956_taxonomy",
+                    "9566887862",
+                    "brand_taxonomy_6799bd77066d414f5b548156_6799bd77066d414f5b548156_taxonomy",
+                    "brand_taxonomy_677bf4cbae0ec8cda309c2f2_677bf4cbae0ec8cda309c2f2_taxonomy",
+                    "brand_taxonomy_679cb2997f1e24cd3e43aeb0_679cb2997f1e24cd3e43aeb0_taxonomy",
+                    "brand_taxonomy_679c74977f1e24cd3e4396c4_679c74977f1e24cd3e4396c4_taxonomy",
+                    "brand_taxonomy_677e771bafba1407c5f21428_677e771bafba1407c5f21428_taxonomy",
+                    "9076606867",
+                    "brand_taxonomy_6799fbdf4d78b5d77ca658a4_6799fbdf4d78b5d77ca658a4_taxonomy",
+                    "brand_taxonomy_67972a743f8813055a043c7e_67972a743f8813055a043c7e_taxonomy",
+                    "hm-france",
+                    "brand_taxonomy_67b42aa66951b0bc350ddf48_67b42aa66951b0bc350ddf48_taxonomy",
+                    "abfrl-AE",
+                    "9069874666"
+                ],
+                "title": "ChannelEnum"
+            },
+            "DefaultAutomation": {
+                "type": "string",
+                "enum": [
+                    "color_distribution",
+                    "analyze_attribute",
+                    "analyze_image",
+                    "mask_computation",
+                    "product_listing_audit",
+                    "image_automation",
+                    "bulk_actions",
+                    "uniqueness_checker",
+                    "product_quality_score",
+                    "detail_shot_generator",
+                    "infographic_creator",
+                    "video_generation",
+                    "size_chart_creator",
+                    "data_sync_to_external",
+                    "delete_product_images",
+                    "bulk_edit",
+                    "data_export",
+                    "text_classifier",
+                    "optical_character_recognition",
+                    "image_classifier",
+                    "image_classifier_express",
+                    "image_classifier_precise",
+                    "conditional_attribution",
+                    "product_description",
+                    "product_title_generation",
+                    "SEO_Automations",
+                    "swatch_generation",
+                    "image_type",
+                    "image_upload",
+                    "bulk_image_upload",
+                    "hotspot_generation",
+                    "unique_content_generator",
+                    "master_automation",
+                    "multimedia_visibility",
+                    "background_removal",
+                    "face_swap",
+                    "service-1",
+                    "service-2",
+                    "service-3",
+                    "service-4",
+                    "service-5",
+                    "metadata_translation",
+                    "image_translation",
+                    "update_availability",
+                    "smp_upgrade",
+                    "SMP_image_upsert"
+                ],
+                "title": "DefaultAutomation"
+            },
+            "RegionEnum": {
+                "type": "string",
+                "enum": [
+                    "India",
+                    "Africa",
+                    "Asia",
+                    "Europe",
+                    "Global",
+                    "Middle East",
+                    "North America",
+                    "Oceania",
+                    "South America"
+                ],
+                "title": "RegionEnum"
+            },
+            "StoreCreateModel": {
+                "properties": {
+                    "store_name": {
+                        "type": "string",
+                        "title": "Store Name"
+                    },
+                    "store_taxonomy": {
+                        "type": "string",
+                        "enum": [
+                            "catalogix",
+                            "brand"
+                        ],
+                        "title": "Store Taxonomy"
+                    },
+                    "store_website": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Store Website"
+                    },
+                    "region": {
+                        "items": {
+                            "$ref": "#/components/schemas/RegionEnum"
+                        },
+                        "type": "array",
+                        "title": "Region"
+                    },
+                    "channels": {
+                        "items": {
+                            "$ref": "#/components/schemas/ChannelEnum"
+                        },
+                        "type": "array",
+                        "title": "Channels"
+                    },
+                    "default_automation": {
+                        "items": {
+                            "$ref": "#/components/schemas/DefaultAutomation"
+                        },
+                        "type": "array",
+                        "title": "Default Automation"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "store_name",
+                    "store_taxonomy",
+                    "region",
+                    "channels",
+                    "default_automation"
+                ],
+                "title": "StoreCreateSchema",
+                "example": {
+                    "channels": [
+                        "ajiob2c",
+                        "SMP"
+                    ],
+                    "default_automation": [
+                        "analyze_image"
+                    ],
+                    "region": [
+                        "India",
+                        "Africa"
+                    ],
+                    "store_name": "sample store",
+                    "store_taxonomy": "catalogix",
+                    "store_website": "https://test.com"
+                }
+            },
+            "StoreUpdateModel": {
+                "properties": {
+                    "store_name": {
+                        "type": "string",
+                        "title": "Store Name"
+                    },
+                    "store_website": {
+                        "type": "string",
+                        "title": "Store Website"
+                    },
+                    "region": {
+                        "items": {
+                            "$ref": "#/components/schemas/RegionEnum"
+                        },
+                        "type": "array",
+                        "title": "Region"
+                    },
+                    "channels": {
+                        "items": {
+                            "$ref": "#/components/schemas/ChannelEnum"
+                        },
+                        "type": "array",
+                        "title": "Channels"
+                    },
+                    "default_automation": {
+                        "items": {
+                            "$ref": "#/components/schemas/DefaultAutomation"
+                        },
+                        "type": "array",
+                        "title": "Default Automation"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "store_name",
+                    "store_website",
+                    "region",
+                    "channels",
+                    "default_automation"
+                ],
+                "title": "StoreUpdatePayload",
+                "example": {
+                    "channels": [
+                        "ajiob2c",
+                        "SMP"
+                    ],
+                    "default_automation": [],
+                    "region": [
+                        "India",
+                        "Africa"
+                    ],
+                    "store_name": "sample store",
+                    "store_website": "https://test.com"
+                }
+            },
+            "StoreCreateResponse": {
+                "properties": {
+                    "status": {
+                        "allOf": [{
+                                "$ref": "#/components/schemas/StatusModel"
+                            }
+                        ],
+                        "description": "Status of the operation"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "status",
+                    "data"
+                ],
+                "title": "StoreCreateResponse"
+            },
+            "StoreUpdateResponse": {
+                "properties": {
+                    "status": {
+                        "allOf": [{
+                                "$ref": "#/components/schemas/StatusModel"
+                            }
+                        ],
+                        "description": "Status of the operation"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "status",
+                    "data"
+                ],
+                "title": "StoreUpdateResponse"
+            },
+            "RetrieveStoreModel": {
+                "properties": {
+                    "data": {
+                        "items": {
+                            "type": "object"
+                        },
+                        "type": "array",
+                        "title": "Store",
+                        "description": "List information of the store",
+                        "default": []
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "store_uuid"
+                ],
+                "title": "RetrieveStoreModel"
+            },
+            "RetrieveStoreResponse": {
+                "properties": {
+                    "status": {
+                        "allOf": [{
+                                "$ref": "#/components/schemas/StatusModel"
+                            }
+                        ],
+                        "description": "Status of the operation, including code and message"
+                    },
+                    "data": {
+                        "allOf": [{
+                                "$ref": "#/components/schemas/RetrieveStoreModel"
+                            }
+                        ],
+                        "description": "store UUID, marketplace, and associated store info"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "status",
+                    "data"
+                ],
+                "title": "RetrieveStoreResponse"
+            },
+            "DeleteStoreResponse": {
+                "properties": {
+                    "status": {
+                        "allOf": [{
+                                "$ref": "#/components/schemas/StatusModel"
+                            }
+                        ],
+                        "description": "Status of the operation, including code and message"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "status"
+                ],
+                "title": "DeleteStoreResponse"
+            },
+            "AssetUploadModel": {
+                "properties": {
+                    "file": {
+                        "type": "string",
+                        "format": "binary",
+                        "title": "File"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "file"
+                ],
+                "title": "Body_images_v1_asset_upload_post"
+            },
+            "AssetUploadResponse": {
+                "properties": {
+                    "status": {
+                        "allOf": [{
+                                "$ref": "#/components/schemas/StatusModel"
+                            }
+                        ],
+                        "description": "Status of the operation"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "status",
+                    "data"
+                ],
+                "title": "AssetUploadResponse"
             }
         }
     }
