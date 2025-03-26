@@ -766,7 +766,7 @@
                 "tags": [
                     "Store"
                 ],
-                "summary": "Retrieve Store Info",
+                "summary": "Retrieve Store Details",
                 "operationId": "retrieve_store_info_v1_store__store_id__get",
                 "parameters": [
                     {
