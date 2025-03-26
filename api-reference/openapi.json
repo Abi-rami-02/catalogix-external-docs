@@ -785,7 +785,7 @@
                         "required": true,
                         "schema": {
                             "type": "string",
-                            "title": "Store Id"
+                            "title": "Store uuid"
                         }
                     }
                 ],
