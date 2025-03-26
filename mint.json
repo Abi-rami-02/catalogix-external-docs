@@ -130,7 +130,7 @@
     {
       "group": "Asset APIs",
       "pages": [
-        "api-reference/product-apis/image-upload"
+        "api-reference/asset-apis/asset-upload"
       ]
     },
     {
