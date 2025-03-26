@@ -770,6 +770,16 @@
                 "operationId": "retrieve_store_info_v1_store__store_id__get",
                 "parameters": [
                     {
+                        "name": "apikey",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Apikey"
+                        },
+                        "example": "Api key"
+                    },
+                    {
                         "name": "store_id",
                         "in": "path",
                         "required": true,
@@ -809,6 +819,16 @@
                 "summary": "Update Store",
                 "operationId": "store_v1_store__store_id__put",
                 "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Apikey"
+                        },
+                        "example": "Api key"
+                    },
                     {
                         "name": "store_id",
                         "in": "path",
@@ -868,6 +888,16 @@
                 "summary": "Delete Store",
                 "operationId": "store_v1_store__store_id__delete",
                 "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Apikey"
+                        },
+                        "example": "Api key"
+                    },
                     {
                         "name": "store_id",
                         "in": "path",
