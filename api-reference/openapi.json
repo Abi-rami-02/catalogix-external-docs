@@ -761,7 +761,7 @@
                 }
             }
         },
-        "/stores/{store_id}": {
+        "/stores/{store_uuid}": {
             "get": {
                 "tags": [
                     "Store"
@@ -780,7 +780,7 @@
                         "example": "Api key"
                     },
                     {
-                        "name": "store_id",
+                        "name": "store_uuid",
                         "in": "path",
                         "required": true,
                         "schema": {
@@ -830,12 +830,12 @@
                         "example": "Api key"
                     },
                     {
-                        "name": "store_id",
+                        "name": "store_uuid",
                         "in": "path",
                         "required": true,
                         "schema": {
                             "type": "string",
-                            "title": "Store Id"
+                            "title": "Store uuid"
                         }
                     },
                     {
@@ -899,12 +899,12 @@
                         "example": "Api key"
                     },
                     {
-                        "name": "store_id",
+                        "name": "store_uuid",
                         "in": "path",
                         "required": true,
                         "schema": {
                             "type": "string",
-                            "title": "Store Id"
+                            "title": "Store uuid"
                         }
                     }
                 ],
