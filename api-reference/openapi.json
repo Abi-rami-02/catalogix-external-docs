@@ -1391,15 +1391,17 @@
                             ]
                         },
                         "type": "array",
-                        "title": "Location"
+                        "title": "Location",
+                        "default":["body", ""]
                     },
                     "msg": {
                         "type": "string",
-                        "title": "Message"
-                    },
+                        "title": "Message",
+                        "default": "Field Required"},
                     "type": {
                         "type": "string",
-                        "title": "Error Type"
+                        "title": "Error Type",
+                        "default": "missing"
                     }
                 },
                 "type": "object",
@@ -1684,14 +1686,36 @@
             },
             "RetrieveStoreModel": {
                 "properties": {
-                    "data": {
-                        "items": {
-                            "type": "object"
-                        },
-                        "type": "array",
-                        "title": "Store",
-                        "description": "List information of the store",
-                        "default": []
+                    "store_name": {
+                        "type": "string",
+                        "example": "Sample store"
+                    },
+                    "workspace_id": {
+                        "type": "string",
+                        "example": "Sample store"
+                    },
+                    "linked_store_id": {
+                        "type": "string",
+                        "example": "linked store"
+                    },
+                    "store_website": {
+                        "type": "string",
+                        "example": "https://test.com"
+                    },
+                    "country": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "example": ["India"]
+                            },
+                    "channels": {
+                                "type": "object",
+                                "example": {"SMP": 34}
+                                    },
+                    "store_taxonomy": {
+                        "type": "string",
+                        "example": "Catalogix"
                     }
                 },
                 "type": "object",
