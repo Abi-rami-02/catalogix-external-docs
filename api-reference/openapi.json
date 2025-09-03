@@ -1217,12 +1217,6 @@
             },
             "SkuDataModel": {
                 "properties": {
-                    "product_code": {
-                        "type": "string",
-                        "title": "product_code",
-                        "description": "Unique identifier for the product",
-                        "example": "CI001"
-                    },
                     "parent_code": {
                         "type": "string",
                         "title": "parent_code",
@@ -1246,12 +1240,12 @@
                             "under review"
                         ],
                         "title": "Status",
-                        "example": "inactive"
+                        "example": "inactive",
+                        "default": "new"
                     }
                 },
                 "type": "object",
                 "required": [
-                    "product_code",
 					"parent_code"
                 ],
                 "title": "SkuDataModel"
