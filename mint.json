@@ -7,7 +7,7 @@
   },
   "analytics": {
     "plausible": {
-      "domain": "docs.catalogix.ai"
+      "domain": "docs.streamoid.com"
     }
   },
   "api": {
@@ -59,42 +59,56 @@
     {
       "group": "Getting Started",
       "pages": [
-        "getting-started/Quickstart"
+        "getting-started/sign-up-and-login",
+        "getting-started/navigation-overview",
+        "getting-started/profile-menu",
+        "getting-started/workspaces",
+        "getting-started/billing",
+        "getting-started/teams",
+        "getting-started/apps-overview",
+        "getting-started/creating-a-new-workspace",
+        "apps/Switching between apps"
       ]
     },
     {
-      "group": "Features",
+      "group": "User Guide",
       "pages": [
-        "features/Accounts",
-        "features/Workspace",
-        "features/Team",
-        "features/Billing",
-        "features/Store",
-        "features/Taxonomy",
-        "features/Add-Products",
-        "features/Automations",
-        "features/Product-Listing-Page",
-        "features/Views",
-        "features/Collaboration-and-Activity",
-        "features/Product-Details",
-        "features/Exports"
-      ]
-    },
-    {
-      "group": "Channels and Integrations",
-      "pages": [
-        "channels/Platforms",
         {
-          "group": "Marketplaces",
+          "group": "Artifax - Design it",
           "pages": [
-            "channels/India",
-            "channels/Middle-East",
-            "channels/Asia",
-            "channels/North-America",
-            "channels/Europe",
-            "channels/Oceania",
-            "channels/Latin America",
-            "channels/Africa"
+            "apps/artifax/getting-started-with-artifax",
+            "apps/artifax/layout-overview",
+            "apps/artifax/exploring-products-in-scout",
+            "apps/artifax/remixing-a-product",
+            "apps/artifax/projects",
+            "apps/artifax/adding-products-to-projects"
+          ]
+        },
+        {
+          "group": "Photogenix - Shoot it",
+          "pages": [
+            "apps/photogenix/getting-started-with-photogenix",
+            "apps/photogenix/photogenix-workflow",
+            "apps/photogenix/ai-retouch-tool",
+            "apps/photogenix/regenerate",
+            "apps/photogenix/retouch",
+            "apps/photogenix/retouch-prompting-tips"
+          ]
+        },
+        {
+          "group": "Catalogix - List it",
+          "pages": [
+            "apps/catalogix/getting-started-with-catalogix",
+            "apps/catalogix/layout-overview",
+            "apps/catalogix/create-a-store",
+            "apps/catalogix/upload-products",
+            "apps/catalogix/inside-a-store",
+            "apps/catalogix/product-listing-page",
+            "apps/catalogix/automations",
+            "apps/catalogix/exports",
+            "apps/catalogix/collaboration-and-activity",
+            "apps/catalogix/product-details",
+            "apps/catalogix/store-settings"
           ]
         }
       ]
@@ -102,9 +116,10 @@
     {
       "group": "Developer Guide",
       "pages": [
+        "api-reference/developer/quickstart",
         "api-reference/developer/authentication",
         "api-reference/developer/errors",
-        "api-reference/developer/Rate-Limits",
+        "api-reference/developer/rate-limits",
         "api-reference/developer/product-model"
       ]
     },
