@@ -57,6 +57,12 @@
   ],
   "navigation": [
     {
+      "group": "Welcome",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
       "group": "Getting Started",
       "pages": [
         "getting-started/sign-up-and-login",
